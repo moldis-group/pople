@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>NFS-G4(MP2) &mdash; sphinx_test1 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="sphinx_test1 1.0 documentation" href="#" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="nfs-g4-mp2">
+<h1>NFS-G4(MP2)<a class="headerlink" href="#nfs-g4-mp2" title="Permalink to this headline">¶</a></h1>
+<p>The Original G4(MP2) protocol is inherent to Gaussian software package. This remodelled code runs the normal G4(MP2) protocol using ORCA suite of package along with the devised NFS-G4(MP2) protocols for high speed-accuracy trade-off. The script also provide the opportunity to the user to explore the affects of selection of Theory/Basis-set combination in the composite model and its overall affect on the prediction of the Thermochemical properties.</p>
+<p>Current version is 1.0.</p>
+<div class="section" id="key-features">
+<h2>Key Features<a class="headerlink" href="#key-features" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Prediction of user defined Thermochemical properties including, Enthalpy of Formation, Ionization Potential, Atomization Energy, Electron Affinity, Proton Affinity and Binding Energy.</li>
+<li>User defined Theory-Basis set combination at various levels.</li>
+<li>Geometry optimization free Energy calculation.</li>
+<li>HLC free Energy calculation.</li>
+</ul>
+</div>
+<div class="section" id="script-dependent-libraries-installations">
+<h2>Script/Dependent-libraries Installations<a class="headerlink" href="#script-dependent-libraries-installations" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="installing-running-script">
+<h3>Installing running Script<a class="headerlink" href="#installing-running-script" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash"><div class="highlight"><pre>$ pip install ----
+</pre></div>
+</div>
+<p>&#8212;-statement&#8212;-</p>
+<div class="highlight-bash"><div class="highlight"><pre>$ pip install -----
+</pre></div>
+</div>
+<p>&#8212;-statement&#8212;-</p>
+</div>
+<div class="section" id="installing-dependent-libraries">
+<h3>Installing dependent libraries<a class="headerlink" href="#installing-dependent-libraries" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash"><div class="highlight"><pre>$ pip install ----
+</pre></div>
+</div>
+<p>&#8212;-statement&#8212;-</p>
+</div>
+</div>
+<div class="section" id="running-the-script">
+<h2>Running The Script<a class="headerlink" href="#running-the-script" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="input-files">
+<h3>Input Files<a class="headerlink" href="#input-files" title="Permalink to this headline">¶</a></h3>
+<p>The script requires the following files to run and generate the required thermochemical properties.</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">geom.xyz</span></code>: The cartesian coordinates (Angstrom unit) of the molecule along with information about the total no. of atoms, charge and multiplicity. One such example for methane molecule is given below.</li>
+</ul>
+<div class="highlight-text"><div class="highlight"><pre>         5 [Total no. of atoms]
+         0           1 [charge and multiplicity]
+C        0.00000000     0.00000000     0.00000000 [Cartesian Coordinates]
+H        1.09336000     0.00000000     0.00000000
+H       -0.36445000     0.00000000    -1.03083000
+H       -0.36445000    -0.97188000     0.34361000
+H       -0.36445000     0.97188000     0.34361000
+</pre></div>
+</div>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">orca_g4mp2.inp</span></code>: This input file contains the technical details for the various steps involved in the composite procedure. One such example for running the normal G4(MP2) protocol is <a class="reference internal" href="inp.html#g4mp2-inp"><span>orca-g4mp2-inp</span></a>. It also allows the user to manipulate the settings as per their choice. For detailed information, please go to the tutorial section.</li>
+<li><code class="docutils literal"><span class="pre">read_geom_freq.dat</span></code>: The user can choose to determine the G4(MP2) energy on a pre-optimized geometry. In that case, they have to provide this input file along with the above two, contating information regarding the optimzed geometry and vibrational frequencies. To be noted, all vibrational frequencies must be included to run the script, i.e., 3N-5 for linear systems and 3N-6 for non-linear systems. One such example for pre-optimized methane molecule is given below:</li>
+</ul>
+<div class="highlight-text"><div class="highlight"><pre>           5 [Total no. of atoms]
+ Optimized atomic coordinates (Angstrom) [Title line]
+       C     -0.00000123    -0.00000000    -0.00000079 [Optimized geometry coordinates]
+       H      0.68957985     0.00051101    -0.84657788
+       H     -1.02803745     0.00063322    -0.36792717
+       H      0.16896006    -0.89208896     0.60649423
+       H      0.16951220     0.89094474     0.60802020
+1343.36 [Vibrational frequencies at the optimized geometry]
+1343.36
+1343.38
+1564.11
+1564.17
+3042.96
+3156.57
+3156.61
+3156.67
+</pre></div>
+</div>
+</div>
+<div class="section" id="output-files">
+<h3>Output Files<a class="headerlink" href="#output-files" title="Permalink to this headline">¶</a></h3>
+<p>The script produces three output files, <code class="docutils literal"><span class="pre">ORCA_G4MP2.com</span></code>, <code class="docutils literal"><span class="pre">ORCA_G4MP2.out</span></code>, and <code class="docutils literal"><span class="pre">Thermochemistry.out</span></code>. The <code class="docutils literal"><span class="pre">ORCA_G4MP2.com</span></code> file compiles all the ORCA input files created by the script on-the-fly &#8212; for the various steps involved in the composite procedure. Similarly, the output files generated from these corresponding input files are collected in <code class="docutils literal"><span class="pre">ORCA_G4MP2.out</span></code>. The <code class="docutils literal"><span class="pre">Thermochemistry.out</span></code> file collects all the required energies and energy corrections involved in the G4(MP2) protocol along with the predicted value of the thermochemical property asked by the user. One such output files genrerated for methane molecule is given here. <a class="reference internal" href="ORCA_G4MP2_com.html#g4mp2-com"><span>ORCA_G4MP2.com</span></a>, <a class="reference internal" href="ORCA_G4MP2_out.html#g4mp2-out"><span>ORCA_G4MP2.out</span></a>, and <a class="reference internal" href="Thermochemistry.html#g4mp2-thermo"><span>Thermochemistry.out</span></a>.</p>
+</div>
+</div>
+<div class="section" id="tutorial">
+<h2>Tutorial<a class="headerlink" href="#tutorial" title="Permalink to this headline">¶</a></h2>
+<p>Please see <a class="reference internal" href="Demo.html#g4mp2-demo"><span>Demo</span></a> for the details information regarding <code class="docutils literal"><span class="pre">orca_g4mp2.inp</span></code></p>
+</div>
+<div class="section" id="source-code">
+<h2>Source code<a class="headerlink" href="#source-code" title="Permalink to this headline">¶</a></h2>
+<p>The project is hosted on <a class="reference external" href="https://github.com/Sambit1994/FAcT.github.io/">GitHub</a></p>
+<p>Please feel free to file an issue on the <a class="reference external" href="https://github.com/">bug tracker</a> if you have found a bug
+or have some suggestion in order to improve the library.</p>
+</div>
+<div class="section" id="dependencies">
+<h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="communication-channels">
+<h2>Communication channels<a class="headerlink" href="#communication-channels" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="contributing">
+<h2>Contributing<a class="headerlink" href="#contributing" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="#">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">NFS-G4(MP2)</a><ul>
+<li><a class="reference internal" href="#key-features">Key Features</a></li>
+<li><a class="reference internal" href="#script-dependent-libraries-installations">Script/Dependent-libraries Installations</a><ul>
+<li><a class="reference internal" href="#installing-running-script">Installing running Script</a></li>
+<li><a class="reference internal" href="#installing-dependent-libraries">Installing dependent libraries</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#running-the-script">Running The Script</a><ul>
+<li><a class="reference internal" href="#input-files">Input Files</a></li>
+<li><a class="reference internal" href="#output-files">Output Files</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tutorial">Tutorial</a></li>
+<li><a class="reference internal" href="#source-code">Source code</a></li>
+<li><a class="reference internal" href="#dependencies">Dependencies</a></li>
+<li><a class="reference internal" href="#communication-channels">Communication channels</a></li>
+<li><a class="reference internal" href="#contributing">Contributing</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/index.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, SKD.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
+      
+      |
+      <a href="_sources/index.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

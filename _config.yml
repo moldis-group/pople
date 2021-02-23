@@ -4,34 +4,3 @@ email: "ramakrishnan@tifrh.res.in"
 github: moldis-group
 show_downloads: true
 
-
-# Site Author
-author:
-  name             : 
-  avatar           : /assets/img/pople5.png
-  bio: 
-    Postdoctoral scholar in
-    <br> 
-    ecology and evolution
-    
-  links:
-    - label: "Uni Lund"
-      icon: "fas fa-2x fa-fw fa-map-marker-alt"
-      url: "https://www.lunduniversity.lu.se/lucat/user/103e4b4ed2f6ea7e498de3c28157c7bd/"
-    - label: "Email"
-      icon: "fas fa-2x fa-fw fa-envelope"
-      url: "mailto:moritz.luerig [at] gmail.com"
-    - label: "Twitter"
-      icon: "fab fa-2x fa-fw fa-twitter"
-      url: "https://twitter.com/mluerig"
-    - label: "GitHub"
-      icon: "fab fa-2x fa-fw fa-github"
-      url: "https://github.com/mluerig"
-    - label: "Orcid"
-      icon: "fab fa-2x fa-fw fa-orcid"
-      url: "https://orcid.org/0000-0002-8175-6234"
-      
-
-      
-
-

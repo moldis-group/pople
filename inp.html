@@ -7,8 +7,7 @@ layout: default
 
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-
-  <body role="document">  
+ <body role="document">  
 
     <div class="document">
       <div class="documentwrapper">
@@ -16,92 +15,88 @@ layout: default
           <div class="body" role="main">
             
   <div class="section" id="orca-g4mp2-inp">
-<span id="g4mp2-inp"></span><h1>orca-g4mp2-inp<a class="headerlink" href="#orca-g4mp2-inp" title="Permalink to this headline">¶</a></h1>
-<div class="highlight-text"><div class="highlight"><pre>&amp;orca_g4mp2_input
- openmpi_dir =&quot;/apps/openmpi-3.0.0_install/&quot;
- orca_dir =&quot;/home/project_g4mp2_2019/ORCA_4_2/orca_4_2_0_linux_x86-64_openmpi314/&quot;
- install_dir =&quot;/apps/orca_g4mp2/&quot;
+<span id="g4mp2-inp"></span><h1>orca-g4mp2.inp<a class="headerlink" href="#orca-g4mp2-inp" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-text"><div class="highlight"><pre>openmpi_dir =&quot;/apps/openmpi-3.0.0_install/&quot;
+orca_dir =&quot;/home/project_g4mp2_2019/ORCA_4_2/orca_4_2_0_linux_x86-64_openmpi314/&quot;
+install_dir =&quot;/apps/orca_g4mp2/&quot;
 
- maxcore_mb = 32000
- nproc = 1
+maxcore_mb = 32000
+nproc = 1
 
- method_opt_freq = &quot;B3LYP/G &quot;
- basis_opt_freq = &quot;GTBAS3&quot;
- custombasis_opt_freq = .true.
+method_opt_freq = &quot;B3LYP/G &quot;
+basis_opt_freq = &quot;GTBAS3&quot;
+custombasis_opt_freq = .true.
+scalfac = 0.9854
 
- String_Opt = &quot;TightOpt&quot;
+String_Opt = &quot;TightOpt&quot;
 
- MGGA = .false.
+MGGA = .false.
 
- FROZEN_GEOM = .false.
+FROZEN_GEOM = .false.
 
- method_ccsdt = &quot;CCSD(T) &quot;
- basis_ccsdt = &quot;GTBAS1&quot;
- custombasis_ccsdt = .true.
- DLPNO_CCSDT = .false.
- switch_RIMP2_small=.false.
+method_ccsdt = &quot;CCSD(T) &quot;
+basis_ccsdt = &quot;GTBAS1&quot;
+custombasis_ccsdt = .true.
+DLPNO_CCSDT = .false.
 
- switch_read_RIMP2_small = .false.
+switch_read_RIMP2_small = .false.
 
- method_mp2_s = &quot;MP2 &quot;
- basis_mp2_s = &quot;GTBAS1&quot;
- custombasis_mp2_s = .true.
+switch_RIMP2_small=.false.
+method_mp2_s = &quot; &quot;
+basis_mp2_s = &quot;&quot;
+custombasis_mp2_s = .true.
 
- method_mp2 = &quot;MP2 &quot;
- basis_mp2 = &quot;GTMP2largeXP&quot;
- custombasis_mp2 = .true.
- flag_RIMP2 = .false.
- flag_DLPNOMP2 = .false.
+method_mp2 = &quot;MP2 &quot;
+basis_mp2 = &quot;GTMP2largeXP&quot;
+custombasis_mp2 = .true.
+flag_RIMP2 = .false.
+flag_DLPNOMP2 = .false.
 
- method_hf3 = &quot;HF &quot;
- basis_hf3 = &quot;GFHFB3&quot;
- custombasis_hf3 = .true.
+method_hf3 = &quot;HF &quot;
+basis_hf3 = &quot;GFHFB3&quot;
+custombasis_hf3 = .true.
 
- method_hf4 = &quot;HF &quot;
- basis_hf4 = &quot;GFHFB4&quot;
- custombasis_hf4 = .true.
+method_hf4 = &quot;HF &quot;
+basis_hf4 = &quot;GFHFB4&quot;
+custombasis_hf4 = .true.
 
- scalfac = 0.9854
+HF_CBS_default      = .true.
+HF_CBS_orca_23_def2 = .false.
+HF_CBS_orca_34_def2 = .false.
+HF_CBS_orca_23_cc   = .false.
+HF_CBS_orca_34_cc   = .false.
 
- calc_IP = .false.
- verticalIP = .false.
+calc_HF = .true.
 
- calc_EA = .false.
- verticalEA = .false.
+calc_AE = .false.
 
- calc_PA = .false.
+calc_IP = .false.
+verticalIP = .false.
 
- calc_AE = .false.
+calc_EA = .false.
+verticalEA = .false.
 
- calc_BE = .false.
+calc_PA = .false.
 
- calc_HF = .false.
+calc_BE = .false.
 
- conv_scf = &quot;VeryTight&quot;
+HLCeqZERO = .false.
 
- HLCeqZERO = .false.
+SO_3rdrow_mols = .true.
 
- SOSCF    = .false.
- SCFDIIS  = .false.
+conv_scf = &quot;VeryTight&quot;
 
- SO_3rdrow_mols = .true.
+SCFDIIS  = .false.
+SOSCF    = .false.
 
- LSHIFT  = .false.
+LSHIFT  = .false.
 
- optdiis = .false.
+optdiis = .false.
 
- HF_CBS_default      = .true.
- HF_CBS_orca_23_def2 = .false.
- HF_CBS_orca_34_def2 = .false.
- HF_CBS_orca_23_cc   = .false.
- HF_CBS_orca_34_cc   = .false.
-
- restart_cc = .false.
- restart_mp2 = .false.
- restart_hf3 = .false.
- restart_hf4 = .false.
-
-/orca_g4mp2_input
+restart_cc  = .false.
+restart_mp2 = .false.
+restart_hf3 = .false.
+restart_hf4 = .false.
 </pre></div>
 </div>
 </div>
@@ -155,5 +150,8 @@ layout: default
     </div>
 
     
+
+    
   </body>
+
 </html>

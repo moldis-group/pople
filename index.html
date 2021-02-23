@@ -6,7 +6,7 @@ layout: default
 
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-  <body role="document">  
+   <body role="document">  
 
     <div class="document">
       <div class="documentwrapper">
@@ -47,8 +47,8 @@ layout: default
 <p>&#8212;-statement&#8212;-</p>
 </div>
 </div>
-<div class="section" id="running-the-script">
-<h2>Running The Script<a class="headerlink" href="#running-the-script" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="requirements-and-outcome">
+<h2>Requirements and Outcome<a class="headerlink" href="#requirements-and-outcome" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="input-files">
 <h3>Input Files<a class="headerlink" href="#input-files" title="Permalink to this headline">¶</a></h3>
 <p>The script requires the following files to run and generate the required thermochemical properties.</p>
@@ -65,7 +65,7 @@ H       -0.36445000     0.97188000     0.34361000
 </pre></div>
 </div>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">orca_g4mp2.inp</span></code>: This input file contains the technical details for the various steps involved in the composite procedure. One such example for running the normal G4(MP2) protocol is <a class="reference internal" href="inp.html#g4mp2-inp"><span>orca-g4mp2-inp</span></a>. It also allows the user to manipulate the settings as per their choice. For detailed information, please go to the tutorial section.</li>
+<li><code class="docutils literal"><span class="pre">orca_g4mp2.inp</span></code>: This input file contains the technical details for the various steps involved in the composite procedure. One such example for estimating <cite>Enthalpy of Formation</cite> using the normal G4(MP2) protocol is <a class="reference internal" href="inp.html#g4mp2-inp"><span>orca-g4mp2.inp</span></a>. It also allows the user to manipulate the settings as per their choice. For detailed information, please go to the tutorial section.</li>
 <li><code class="docutils literal"><span class="pre">read_geom_freq.dat</span></code>: The user can choose to determine the G4(MP2) energy on a pre-optimized geometry. In that case, they have to provide this input file along with the above two, contating information regarding the optimzed geometry and vibrational frequencies. To be noted, all vibrational frequencies must be included to run the script, i.e., 3N-5 for linear systems and 3N-6 for non-linear systems. One such example for pre-optimized methane molecule is given below:</li>
 </ul>
 <div class="highlight-text"><div class="highlight"><pre>           5 [Total no. of atoms]
@@ -94,7 +94,593 @@ H       -0.36445000     0.97188000     0.34361000
 </div>
 <div class="section" id="tutorial">
 <h2>Tutorial<a class="headerlink" href="#tutorial" title="Permalink to this headline">¶</a></h2>
-<p>Please see <a class="reference internal" href="Demo.html#g4mp2-demo"><span>Demo</span></a> for the details information regarding <code class="docutils literal"><span class="pre">orca_g4mp2.inp</span></code></p>
+<div class="section" id="technical-details">
+<h3>Technical Details<a class="headerlink" href="#technical-details" title="Permalink to this headline">¶</a></h3>
+<p>The detailed information involved in the <code class="docutils literal"><span class="pre">orca_g4mp2.inp</span></code> are provided here: <a class="reference internal" href="Technical-Details.html#g4mp2-technical-details"><span>Technical-Details</span></a>.</p>
+</div>
+<div class="section" id="the-g4-mp2-variants">
+<h3>The G4(MP2) Variants<a class="headerlink" href="#the-g4-mp2-variants" title="Permalink to this headline">¶</a></h3>
+<p>The various devised G4(MP2) variants on the basis of the approximations used in the different steps of calculations are presented below:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="14%" />
+<col width="20%" />
+<col width="13%" />
+<col width="14%" />
+<col width="14%" />
+<col width="13%" />
+<col width="13%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Method</th>
+<th class="head">Opt</th>
+<th class="head" colspan="2">CCSD(T)</th>
+<th class="head" colspan="2">MP2</th>
+<th class="head">HF</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&nbsp;</td>
+<td>RIJCOSX</td>
+<td>DLPNO</td>
+<td>RIJK</td>
+<td>RI-MP2</td>
+<td>RIJK</td>
+<td>RIJK</td>
+</tr>
+<tr class="row-odd"><td>G4(MP2)opt</td>
+<td>✔</td>
+<td>✘</td>
+<td>✘</td>
+<td>✘</td>
+<td>✘</td>
+<td>✘</td>
+</tr>
+<tr class="row-even"><td>x3.16</td>
+<td>✔</td>
+<td>✔</td>
+<td>✔</td>
+<td>✘</td>
+<td>✘</td>
+<td>✘</td>
+</tr>
+<tr class="row-odd"><td>x1.07</td>
+<td>✔</td>
+<td>✘</td>
+<td>✘</td>
+<td>✔</td>
+<td>✔</td>
+<td>✘</td>
+</tr>
+<tr class="row-even"><td>x1.20</td>
+<td>✔</td>
+<td>✘</td>
+<td>✘</td>
+<td>✘</td>
+<td>✘</td>
+<td>✔</td>
+</tr>
+<tr class="row-odd"><td>x1.29</td>
+<td>✔</td>
+<td>✘</td>
+<td>✔</td>
+<td>✘</td>
+<td>✔</td>
+<td>✔</td>
+</tr>
+<tr class="row-even"><td>x1.32</td>
+<td>✔</td>
+<td>✘</td>
+<td>✔</td>
+<td>✔</td>
+<td>✔</td>
+<td>✔</td>
+</tr>
+<tr class="row-odd"><td>x7.20</td>
+<td>✔</td>
+<td>✔</td>
+<td>✔</td>
+<td>✘</td>
+<td>✘</td>
+<td>✔</td>
+</tr>
+<tr class="row-even"><td>x1.32 ǂ</td>
+<td>✔</td>
+<td>✘</td>
+<td>✘</td>
+<td>✔</td>
+<td>✔</td>
+<td>✔</td>
+</tr>
+<tr class="row-odd"><td>x3.91</td>
+<td>✔</td>
+<td>✔</td>
+<td>✔</td>
+<td>✔</td>
+<td>✔</td>
+<td>✘</td>
+</tr>
+<tr class="row-even"><td>G4(MP2)XP</td>
+<td>✔</td>
+<td>✔</td>
+<td>✔</td>
+<td>✔</td>
+<td>✔</td>
+<td>✔</td>
+</tr>
+</tbody>
+</table>
+<p>The <code class="docutils literal"><span class="pre">orca_g4mp2.inp</span></code> files containing the technical details of the involved calculations are:</p>
+<ul class="simple">
+<li>G4(MP2)opt: <a class="reference internal" href="inp_opt.html#g4mp2-inp-opt"><span>orca-g4mp2.inp [G4(MP2)opt]</span></a></li>
+<li>x3.16: <a class="reference internal" href="inp_x316.html#g4mp2-inp-x3-16"><span>orca-g4mp2.inp [x3.16]</span></a></li>
+<li>x1.07: <a class="reference internal" href="inp_x107.html#g4mp2-inp-x1-07"><span>orca-g4mp2.inp [x1.07]</span></a></li>
+<li>x1.20: <a class="reference internal" href="inp_x120.html#g4mp2-inp-x1-20"><span>orca-g4mp2.inp [x1.20]</span></a></li>
+<li>x1.29: <a class="reference internal" href="inp_x129.html#g4mp2-inp-x1-29"><span>orca-g4mp2.inp [x1.29]</span></a></li>
+<li>x1.32: <a class="reference internal" href="inp_x132.html#g4mp2-inp-x1-32"><span>orca-g4mp2.inp [x1.32]</span></a></li>
+<li>x7.20: <a class="reference internal" href="inp_x720.html#g4mp2-inp-x7-20"><span>orca-g4mp2.inp [x7.20]</span></a></li>
+<li>x1.32 ǂ: <a class="reference internal" href="inp_x132_ri8.html#g4mp2-inp-x1-32-ri8"><span>orca-g4mp2.inp [x1.32 (RI8)]</span></a></li>
+<li>x3.91: <a class="reference internal" href="inp_x391.html#g4mp2-inp-x3-91"><span>orca-g4mp2.inp [x3.91]</span></a></li>
+<li>G4(MP2)XP: <a class="reference internal" href="inp_XP.html#g4mp2-inp-xp"><span>orca-g4mp2.inp [G4(MP2)XP]</span></a></li>
+</ul>
+<p>The Optimized HLC parameters of the G4(MP2) variants</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="12%" />
+<col width="17%" />
+<col width="14%" />
+<col width="15%" />
+<col width="15%" />
+<col width="15%" />
+<col width="14%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Method</th>
+<th class="head">A</th>
+<th class="head">B</th>
+<th class="head">C</th>
+<th class="head">D</th>
+<th class="head">A&#8217;</th>
+<th class="head">E</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>G4(MP2)</td>
+<td>0.00947200</td>
+<td>0.00310200</td>
+<td>0.00974100</td>
+<td>0.00211500</td>
+<td>0.00976900</td>
+<td>0.00237900</td>
+</tr>
+<tr class="row-odd"><td>G4(MP2)opt</td>
+<td>0.00948481</td>
+<td>0.00312769</td>
+<td>0.00975840</td>
+<td>0.00211719</td>
+<td>0.00977446</td>
+<td>0.00247315</td>
+</tr>
+<tr class="row-even"><td>x3.16</td>
+<td>0.00949625</td>
+<td>0.00312116</td>
+<td>0.00984381</td>
+<td>0.00206870</td>
+<td>0.00978250</td>
+<td>0.00243738</td>
+</tr>
+<tr class="row-odd"><td>x1.07</td>
+<td>0.00951849</td>
+<td>0.00310732</td>
+<td>0.00978815</td>
+<td>0.00210070</td>
+<td>0.00981390</td>
+<td>0.00243314</td>
+</tr>
+<tr class="row-even"><td>x1.20</td>
+<td>0.00949164</td>
+<td>0.00311554</td>
+<td>0.00974998</td>
+<td>0.00211741</td>
+<td>0.00978467</td>
+<td>0.00242957</td>
+</tr>
+<tr class="row-odd"><td>x1.29</td>
+<td>0.00946262</td>
+<td>0.00315807</td>
+<td>0.00976898</td>
+<td>0.00210698</td>
+<td>0.00983878</td>
+<td>0.00242382</td>
+</tr>
+<tr class="row-even"><td>x1.32</td>
+<td>0.00948572</td>
+<td>0.00299972</td>
+<td>0.00979797</td>
+<td>0.00207909</td>
+<td>0.00987643</td>
+<td>0.00231558</td>
+</tr>
+<tr class="row-odd"><td>x7.20</td>
+<td>0.00951011</td>
+<td>0.00309910</td>
+<td>0.00983814</td>
+<td>0.00207525</td>
+<td>0.00980222</td>
+<td>0.00243010</td>
+</tr>
+<tr class="row-even"><td>x1.32 ǂ</td>
+<td>0.00951937</td>
+<td>0.00312338</td>
+<td>0.00978123</td>
+<td>0.00209465</td>
+<td>0.00981319</td>
+<td>0.00242884</td>
+</tr>
+<tr class="row-odd"><td>x3.91</td>
+<td>0.00952718</td>
+<td>0.00324341</td>
+<td>0.00982906</td>
+<td>0.00206325</td>
+<td>0.00979385</td>
+<td>0.00235649</td>
+</tr>
+<tr class="row-even"><td>G4(MP2)XP</td>
+<td>0.00951842</td>
+<td>0.00319566</td>
+<td>0.00980448</td>
+<td>0.00205800</td>
+<td>0.00979309</td>
+<td>0.00238393</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="demo">
+<h3>Demo<a class="headerlink" href="#demo" title="Permalink to this headline">¶</a></h3>
+<p>In accordance with original G4(MP2), the script allows the user to estimate other thermochemical properties, i.e., Enthalpy of Formation (EOF), Atomization Energy (AE), Ionization Potential (IP), Electron Affinity (EA), Proton Affinity (PA), and Binding Energy (BE). For EOF and AE of a molecule, only coordinates of molecular geometry is required. While, for rest of the properties, the user has to provide both neutral and charged atomic/molecular geometry files (for BE, both monomer and dimer geometries are required).</p>
+<p>After collecting all the required files (see <a class="reference internal" href="#input-files">Input Files</a>), and selecting the required thermochemical property (see <a class="reference external" href="file:///S:/TIFR/Sphinx/SPHINX/html/Technical-Details.html#thermochemical-property-determination">Thermochemical Property Determination</a>), the user just has to run the binary from the corresponding directory. The following shows one such example when HOF estimation is done for <cite>CH4</cite> using normal G4(MP2) method. For extended information of the running input files, please refer to <a class="reference internal" href="ORCA_G4MP2_out.html#g4mp2-out"><span>ORCA_G4MP2.out</span></a>.</p>
+<div class="highlight-bash"><div class="highlight"><pre>$ /apps/orca_g4mp2/g4mp2.x <span class="p">&amp;</span>
+</pre></div>
+</div>
+<div class="section" id="geometry-optimization-frequency-calculation">
+<h4>Geometry Optimization &amp; Frequency calculation<a class="headerlink" href="#geometry-optimization-frequency-calculation" title="Permalink to this headline">¶</a></h4>
+<p>The calculation will start from the geomtery optimization and subsequent frequency calculation (at <strong>GTBAS3</strong> basis set level) and an input file (<cite>input.com</cite>) will be created with the necessary information to run the calculation:</p>
+<div class="highlight-text"><div class="highlight"><pre>!   B3LYP/G Grid7 Printbasis  TightOpt  Freq
+* xyz   0  1
+C     0.00000000     0.00000000     0.00000000
+H     1.09336000     0.00000000     0.00000000
+H    -0.36445000     0.00000000    -1.03083000
+H    -0.36445000    -0.97188000     0.34361000
+H    -0.36445000     0.97188000     0.34361000
+*
+</pre></div>
+</div>
+<p>Once the geometry optimization and frequency calculation is over, the script will extract the optimized geometry from the corresponding output file (<cite>input.out</cite>). The coordinates of the optimized geometry goes through an in-built scheme to verify the whether the molecule is linear or not. Depending on that the required <em>vibrational frequencies</em> are collected from the <cite>input.out</cite> file and are saved in <code class="docutils literal"><span class="pre">freq.txt</span></code>.</p>
+<p>The optimized coordinates and scaled frequencies are also subsequently get printed on the <a class="reference internal" href="Thermochemistry.html#g4mp2-thermo"><span>Thermochemistry.out</span></a> file</p>
+<div class="highlight-text"><div class="highlight"><pre>Optimized atomic coordinates (Angstrom)
+      C      0.00000024    -0.00000002     0.00000000
+      H      1.07698196    -0.18012947    -0.00002129
+      H     -0.52882274    -0.95534548     0.00013221
+      H     -0.27411608     0.56763359    -0.89161936
+      H     -0.27404603     0.56784158     0.89150844
+
+Unscaled harmonic wavenumbers (cm^-1)
+       1323.51
+       1323.52
+       1323.52
+       1541.17
+       1541.17
+       2998.34
+       3110.48
+       3110.49
+       3110.50
+</pre></div>
+</div>
+<p>After geometry optimization, the optimized coordinates are used for rest of the single point energy calculations.</p>
+</div>
+<div class="section" id="ccsd-t-energy-calculation">
+<h4>CCSD(T) Energy calculation<a class="headerlink" href="#ccsd-t-energy-calculation" title="Permalink to this headline">¶</a></h4>
+<p>The earlier <cite>input.com</cite> and <cite>input.out</cite> files are discarded and new files are created for each of the single point calculations.</p>
+<div class="highlight-text"><div class="highlight"><pre>! CCSD(T) Printbasis
+* xyz   0  1
+C     0.00000024    -0.00000002     0.00000000
+H     1.07698196    -0.18012947    -0.00002129
+H    -0.52882274    -0.95534548     0.00013221
+H    -0.27411608     0.56763359    -0.89161936
+H    -0.27404603     0.56784158     0.89150844
+*
+</pre></div>
+</div>
+<p>From the CCSD(T) step, both the CCSD(T) energy and inherent MP2 energy (at small basis <strong>GTBAS1</strong>) are collected</p>
+<div class="highlight-text"><div class="highlight"><pre>-------------------------   --------------------
+FINAL SINGLE POINT ENERGY       -40.354687160506 [CCSD(T) Energy]
+-------------------------   --------------------
+
+Initial E(tot)                             ...    -40.331248094 [Inherent MP2 energy in the CCSD(T) step]
+</pre></div>
+</div>
+</div>
+<div class="section" id="mp2-energy-calculation">
+<h4>MP2 Energy calculation<a class="headerlink" href="#mp2-energy-calculation" title="Permalink to this headline">¶</a></h4>
+<p>CCSD(T) calculation is followed by MP2 energy calculation at a large basis-set (<strong>GTMP2LargeXP</strong>)</p>
+<div class="highlight-text"><div class="highlight"><pre>! MP2 Printbasis
+* xyz   0  1
+C     0.00000024    -0.00000002     0.00000000
+H     1.07698196    -0.18012947    -0.00002129
+H    -0.52882274    -0.95534548     0.00013221
+H    -0.27411608     0.56763359    -0.89161936
+H    -0.27404603     0.56784158     0.89150844
+*
+</pre></div>
+</div>
+<p>The MP2 energy is collected from the corresponding <cite>input.out</cite> file and is substracted to the onde from the CCSD(T) step to calculate DE(MP2). Along with the MP2 energy the inherent HF energy is also collected, required to determine DE(HF).</p>
+<div class="highlight-text"><div class="highlight"><pre>-------------------------   --------------------
+FINAL SINGLE POINT ENERGY       -40.405646162405 [MP2 energy at large basis]
+-------------------------   --------------------
+
+----------------
+TOTAL SCF ENERGY
+----------------
+
+Total Energy       :          -40.21213373 Eh           -1094.22779 eV [Inherent HF energy]
+</pre></div>
+</div>
+</div>
+<div class="section" id="hf-energy-calculation">
+<h4>HF Energy calculation<a class="headerlink" href="#hf-energy-calculation" title="Permalink to this headline">¶</a></h4>
+<p>Two HF energy calculations are carried out, first with a small basis <strong>GFHFB3</strong> and the next with a large basis-set <strong>GFHFB4</strong></p>
+<div class="highlight-text"><div class="highlight"><pre>! HF Printbasis
+* xyz   0  1
+C     0.00000024    -0.00000002     0.00000000
+H     1.07698196    -0.18012947    -0.00002129
+H    -0.52882274    -0.95534548     0.00013221
+H    -0.27411608     0.56763359    -0.89161936
+H    -0.27404603     0.56784158     0.89150844
+*
+</pre></div>
+</div>
+<p>Using the extrapolation scheme, the HF energy at basis-set limit is determined (see <a class="reference external" href="file:///S:/TIFR/Sphinx/SPHINX/html/Technical-Details.html#hf-energies-determination">HF Energies Determination</a>) and is substracted from the HF energy obtained from <strong>GTMP2LargeXP</strong> basis set level to determine DE(HF).</p>
+<p>After each sucessive step, the <code class="docutils literal"><span class="pre">Thermochemistry.out</span></code> file keeps on updating and prints the computation time involved for each step</p>
+<div class="highlight-text"><div class="highlight"><pre>* Geometry optimization/frequencies done in             151.62 s
+** Elapsed time =             152.26 s
+
+* CCSD(T) done in               1.91 s
+** Elapsed time =             154.18 s
+
+* MP2/L done in                 6.91 s
+** Elapsed time =             161.11 s
+
+* HF/VTZ done in                3.18 s
+** Elapsed time =             164.32 s
+
+* HF/VQZ done in               15.46 s
+** Elapsed time =             179.87 s
+</pre></div>
+</div>
+<p>Once all the calculation steps are over for a system, the various energies and energy corrections as well as the calculated G4(MP2) energies are printed on the <code class="docutils literal"><span class="pre">Thermochemistry.out</span></code> file. The <code class="docutils literal"><span class="pre">Elapsed</span> <span class="pre">time</span></code> shows the time involved in the execution of each of the individual steps.</p>
+<div class="highlight-text"><div class="highlight"><pre>   Temperature=     298.150000               Pressure=       1.000000
+        E(ZPE)=       0.044157             E(Thermal)=       0.047028
+           HLC=      -0.037888                     SO=       0.000000
+    E(CCSD(T))=     -40.354687
+       DE(MP2)=      -0.074398                 DE(HF)=      -0.004870
+    G4MP2(0 K)=     -40.427686           G4MP2 Energy=     -40.424814
+G4MP2 Enthalpy=     -40.423870      G4MP2 Free Energy=       0.000000
+</pre></div>
+</div>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">E(ZPE)</span></code>: Scaled Zero Point Vibrational Energy</li>
+<li><code class="docutils literal"><span class="pre">E(Thermal)</span></code>: Molecular Thermal energy corrections, determined from translational, rotational and vibrational degrees of freedom</li>
+<li><code class="docutils literal"><span class="pre">HLC</span></code>: Higher Level Correction (The semi-empirical correction)</li>
+<li><code class="docutils literal"><span class="pre">SO</span></code>: The Spin-Orbit correction</li>
+<li><code class="docutils literal"><span class="pre">E(CCSD(T))</span></code>: The CCSD(T) energy</li>
+<li><code class="docutils literal"><span class="pre">DE(MP2)</span></code>: The MP2 energy correction</li>
+<li><code class="docutils literal"><span class="pre">DE(HF)</span></code>: The HF energy correction</li>
+<li><code class="docutils literal"><span class="pre">G4MP2(0</span> <span class="pre">K)</span></code>: The total G4(MP2) energy (<span class="math">\(U_{0}\)</span>). The energy is used for estimating various thermochemical properties.</li>
+<li><code class="docutils literal"><span class="pre">G4MP2</span> <span class="pre">Energy</span></code>: The G4(MP2) energy after thermal correction (<span class="math">\(U_{T}\)</span>)</li>
+<li><code class="docutils literal"><span class="pre">G4MP2</span> <span class="pre">Enthalpy</span></code>: The G4(MP2) enthalpy (<span class="math">\(H_{T}\)</span>)</li>
+<li><code class="docutils literal"><span class="pre">G4MP2</span> <span class="pre">Free</span> <span class="pre">Energy</span></code>: Free energy. <strong>not getting estimated</strong></li>
+</ul>
+</div>
+<div class="section" id="enthapy-of-formation-and-atomization-energy">
+<h4>Enthapy of Formation and Atomization Energy<a class="headerlink" href="#enthapy-of-formation-and-atomization-energy" title="Permalink to this headline">¶</a></h4>
+<p>For estimating Enthalpy of formation and Atomization energy after G4(MP2) energy is estimated for the molecule is done, the same for the constituent atoms are determined. Similar to the molecule, the dfferent single point energies for each of the constituent atom are carried (except geometry optimization and frequency calculation).</p>
+<p>The <code class="docutils literal"><span class="pre">Thermochemistry.out</span></code> file prints the energies of the individual atoms once they are done.</p>
+<div class="highlight-text"><div class="highlight"><pre>* G4MP2 for reference atoms*
+
+* ATOM:   C
+
+* Geometry optimization skipped for atom
+
+* CCSD(T) done in               1.99 s
+** Elapsed time =             182.08 s
+
+* MP2/L done in                 2.27 s
+** Elapsed time =             184.46 s
+
+* HF/VTZ done in                2.63 s
+** Elapsed time =             187.17 s
+
+* HF/VQZ done in                3.93 s
+** Elapsed time =             192.22 s
+
+          Temperature=     298.150000               Pressure=       1.000000
+               E(ZPE)=       0.000000             E(Thermal)=       0.001416
+                  HLC=      -0.013971                     SO=      -0.000140
+           E(CCSD(T))=     -37.751279
+              DE(MP2)=      -0.025410                 DE(HF)=      -0.003476
+           G4MP2(0 K)=     -37.794277           G4MP2 Energy=     -37.792861
+       G4MP2 Enthalpy=     -37.791917      G4MP2 Free Energy=       0.000000
+
+* G4(MP2) done
+** Elapsed time =             192.27 s
+
+* ATOM:   H
+
+* Geometry optimization skipped for atom
+
+* CCSD(T) done in               2.12 s
+** Elapsed time =             194.44 s
+
+* MP2/L done in                 1.49 s
+** Elapsed time =             195.95 s
+
+* HF/VTZ done in                1.65 s
+** Elapsed time =             197.63 s
+
+* HF/VQZ done in                1.58 s
+** Elapsed time =             199.24 s
+
+          Temperature=     298.150000               Pressure=       1.000000
+               E(ZPE)=       0.000000             E(Thermal)=       0.001416
+                  HLC=      -0.002115                     SO=       0.000000
+           E(CCSD(T))=      -0.498233
+              DE(MP2)=      -0.001585                 DE(HF)=      -0.000161
+           G4MP2(0 K)=      -0.502094           G4MP2 Energy=      -0.500677
+       G4MP2 Enthalpy=      -0.499733      G4MP2 Free Energy=       0.000000
+
+* G4(MP2) done
+** Elapsed time =             199.26 s
+</pre></div>
+</div>
+<p>After the required calculation, the <code class="docutils literal"><span class="pre">SUMMARY</span></code> section prints the estimated data of the thermochemical property chosen by the user. For estimating HOF the Thermochemical data is given as:</p>
+<div class="highlight-text"><div class="highlight"><pre>*---------*
+* SUMMARY *
+*---------*
+
+* Atomization energy (Atoms - mol) =                0.62503407 Hartree
+* Atomization energy (Atoms - mol) =               17.00804473 eV
+* Atomization energy (Atoms - mol) =              392.21486014 kcal/mol
+* Atomization energy (Atoms - mol) =             1641.02697481 kj/mol
+* Atomization energy (Atoms - mol), NO HLC =              382.51544470 kcal/mol
+
+** Elapsed time =             199.26 s
+
+*---------*
+* SUMMARY *
+*---------*
+
+* Heat of formation =               -0.02806423 Hartree
+* Heat of formation =               -0.76366657 eV
+* Heat of formation =              -17.61057079 kcal/mol
+* Heat of formation =              -73.68262820 kj/mol
+* Heat of formation, NO HLC =               -7.91115535 kcal/mol
+</pre></div>
+</div>
+<p>For HOF, both <cite>Atomization Energy</cite> and <cite>Enthapy of formation</cite> are printed in different units, i.e., <em>Hartree</em>, <em>eV</em>, <em>kcal/mol</em>, and <em>kj/mol</em>.</p>
+</div>
+<div class="section" id="ionization-potential">
+<h4>Ionization Potential<a class="headerlink" href="#ionization-potential" title="Permalink to this headline">¶</a></h4>
+<p>Determination of IP of CH4 molecule.</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">geom.xyz</span></code>: The cartesian coordinates of the neutral species.</li>
+</ul>
+<div class="highlight-text"><div class="highlight"><pre>          5
+          0           1
+C        0.00000000     0.00000000     0.00000000
+H        1.09336000     0.00000000     0.00000000
+H       -0.36445000     0.00000000    -1.03083000
+H       -0.36445000    -0.97188000     0.34361000
+H       -0.36445000     0.97188000     0.34361000
+</pre></div>
+</div>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">geom_cation_IP.xyz</span></code>: The cartesian coordinates of the cationic species.</li>
+</ul>
+<div class="highlight-text"><div class="highlight"><pre>          5
+          1           2
+C        0.00000000     0.00000000     0.00000000
+H       -1.05653284     0.00000000     0.38288478
+H        1.05653284     0.00000000     0.38288478
+H        0.00000000     1.05653284    -0.38288478
+H        0.00000000    -1.05653284    -0.38288478
+</pre></div>
+</div>
+<p><a class="reference internal" href="Thermochemistry_IP.html#g4mp2-thermo-ip"><span>Thermochemistry.out (IP)</span></a></p>
+</div>
+<div class="section" id="electron-affinity">
+<h4>Electron Affinity<a class="headerlink" href="#electron-affinity" title="Permalink to this headline">¶</a></h4>
+<p>Determination of EA of NH2 molecule.</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">geom.xyz</span></code>: The cartesian coordinates of the neutral species.</li>
+</ul>
+<div class="highlight-text"><div class="highlight"><pre>          3
+          0           2
+N        0.00000000     0.00000000     0.00000000
+H        1.03433000     0.00000000     0.00000000
+H       -0.21739000     0.00000000    -1.01123000
+</pre></div>
+</div>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">geom_anion_EA.xyz</span></code>: The cartesian coordinates of the anionic species.</li>
+</ul>
+<div class="highlight-text"><div class="highlight"><pre>          3
+         -1           1
+N        0.00000000     0.00000000     0.00000000
+H        1.05167000     0.00000000     0.00000000
+H       -0.13287000     0.00000000    -1.04324000
+</pre></div>
+</div>
+<p><a class="reference internal" href="Thermochemistry_EA.html#g4mp2-thermo-ea"><span>Thermochemistry.out (EA)</span></a></p>
+</div>
+<div class="section" id="proton-affinity">
+<h4>Proton Affinity<a class="headerlink" href="#proton-affinity" title="Permalink to this headline">¶</a></h4>
+<p>Determination of PA of PH4 molecule.</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">geom.xyz</span></code>: The cartesian coordinates of the neutral species.</li>
+</ul>
+<div class="highlight-text"><div class="highlight"><pre>          4
+          0           1
+P        0.00000000     0.00000000     0.00000000
+H       -0.77268000     0.00000000    -1.19650000
+H       -0.77268000    -1.03620000     0.59825000
+H       -0.77268000     1.03620000     0.59825000
+</pre></div>
+</div>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">geom_cation_PA.xyz</span></code>: The cartesian coordinates of the protonated species.</li>
+</ul>
+<div class="highlight-text"><div class="highlight"><pre>          5
+          1           1
+P        0.00000000     0.00000000     0.00000000
+H        0.80864000     0.80864000     0.80864000
+H       -0.80864000    -0.80864000     0.80864000
+H       -0.80864000     0.80864000    -0.80864000
+H        0.80864000    -0.80864000    -0.80864000
+</pre></div>
+</div>
+<p><a class="reference internal" href="Thermochemistry_PA.html#g4mp2-thermo-pa"><span>Thermochemistry.out (PA)</span></a></p>
+</div>
+<div class="section" id="binding-energy">
+<h4>Binding Energy<a class="headerlink" href="#binding-energy" title="Permalink to this headline">¶</a></h4>
+<p>Determination of BE of HCl molecule.</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">geom.xyz</span></code>: The cartesian coordinates of the dimer.</li>
+</ul>
+<div class="highlight-text"><div class="highlight"><pre>           4
+           0           1
+Cl       -0.33878438     0.00005419    -1.92735401
+ H       -0.33713178     0.00017025    -0.63826152
+Cl        0.26861484     0.00006154     1.86940497
+ H        1.53001403    -0.00213762     1.62339511
+</pre></div>
+</div>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">geom_monomer_A.xyz</span></code>: The cartesian coordinates of the monomer.</li>
+</ul>
+<div class="highlight-text"><div class="highlight"><pre>           2
+           0           1
+Cl        0.00000000     0.00000000     0.00000000
+ H        1.28992000     0.00000000     0.00000000
+</pre></div>
+</div>
+<p><a class="reference internal" href="Thermochemistry_BE.html#g4mp2-thermo-be"><span>Thermochemistry.out (BE)</span></a></p>
+</div>
+</div>
+</div>
+<div class="section" id="supplemental">
+<h2>Supplemental<a class="headerlink" href="#supplemental" title="Permalink to this headline">¶</a></h2>
+<p>Supplementary data of the G4(MP2) variants for G3/05 dataset: <a class="reference internal" href="SI_G305.html#g4mp2-si-1"><span>Supplementary Data (G3/05)</span></a></p>
 </div>
 <div class="section" id="source-code">
 <h2>Source code<a class="headerlink" href="#source-code" title="Permalink to this headline">¶</a></h2>
@@ -128,12 +714,29 @@ or have some suggestion in order to improve the library.</p>
 <li><a class="reference internal" href="#installing-dependent-libraries">Installing dependent libraries</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#running-the-script">Running The Script</a><ul>
+<li><a class="reference internal" href="#requirements-and-outcome">Requirements and Outcome</a><ul>
 <li><a class="reference internal" href="#input-files">Input Files</a></li>
 <li><a class="reference internal" href="#output-files">Output Files</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#tutorial">Tutorial</a></li>
+<li><a class="reference internal" href="#tutorial">Tutorial</a><ul>
+<li><a class="reference internal" href="#technical-details">Technical Details</a></li>
+<li><a class="reference internal" href="#the-g4-mp2-variants">The G4(MP2) Variants</a></li>
+<li><a class="reference internal" href="#demo">Demo</a><ul>
+<li><a class="reference internal" href="#geometry-optimization-frequency-calculation">Geometry Optimization &amp; Frequency calculation</a></li>
+<li><a class="reference internal" href="#ccsd-t-energy-calculation">CCSD(T) Energy calculation</a></li>
+<li><a class="reference internal" href="#mp2-energy-calculation">MP2 Energy calculation</a></li>
+<li><a class="reference internal" href="#hf-energy-calculation">HF Energy calculation</a></li>
+<li><a class="reference internal" href="#enthapy-of-formation-and-atomization-energy">Enthapy of Formation and Atomization Energy</a></li>
+<li><a class="reference internal" href="#ionization-potential">Ionization Potential</a></li>
+<li><a class="reference internal" href="#electron-affinity">Electron Affinity</a></li>
+<li><a class="reference internal" href="#proton-affinity">Proton Affinity</a></li>
+<li><a class="reference internal" href="#binding-energy">Binding Energy</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#supplemental">Supplemental</a></li>
 <li><a class="reference internal" href="#source-code">Source code</a></li>
 <li><a class="reference internal" href="#dependencies">Dependencies</a></li>
 <li><a class="reference internal" href="#communication-channels">Communication channels</a></li>
@@ -173,10 +776,15 @@ or have some suggestion in order to improve the library.</p>
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &copy;2020, moldis-group
+      &copy;2020, SKD.
+      
       |
-      <a href="https://github.com/moldis-group">https://github.com/moldis-group</a
-        
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
+      
+      |
+      <a href="_sources/index.txt"
+          rel="nofollow">Page source</a>
     </div>
 
     

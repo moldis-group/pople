@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>orca-g4mp2.inp [G4(MP2)XP] &mdash; sphinx_test1 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="sphinx_test1 1.0 documentation" href="index.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="orca-g4mp2-inp-g4-mp2-xp">
+<span id="g4mp2-inp-xp"></span><h1>orca-g4mp2.inp [G4(MP2)XP]<a class="headerlink" href="#orca-g4mp2-inp-g4-mp2-xp" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-text"><div class="highlight"><pre>openmpi_dir =&quot;/apps/openmpi-3.0.0_install/&quot;
+orca_dir =&quot;/home/project_g4mp2_2019/ORCA_4_2/orca_4_2_0_linux_x86-64_openmpi314/&quot;
+install_dir =&quot;/apps/orca_g4mp2/&quot;
+
+maxcore_mb = 32000
+nproc = 1
+
+method_opt_freq = &quot;B3LYP/G Grid7 RIJCOSX def2/J GridX9 Printbasis &quot;
+basis_opt_freq = &quot;GTBAS3&quot;
+custombasis_opt_freq = .true.
+scalfac = 0.9854
+
+String_Opt = &quot;TightOpt&quot;
+
+MGGA = .false.
+
+FROZEN_GEOM = .false.
+
+method_ccsdt = &quot;DLPNO-CCSD(T) RI-MP2 def2-SVP/C RIJK def2/JK TightPNO Printbasis &quot;
+basis_ccsdt = &quot;GTBAS1&quot;
+custombasis_ccsdt = .true.
+DLPNO_CCSDT = .true.
+
+switch_read_RIMP2_small = .true.
+
+switch_RIMP2_small=.false.
+method_mp2_s = &quot;RI-MP2 def2-SVP/C RIJK def2/JK Printbasis &quot;
+basis_mp2_s = &quot;GTBAS1&quot;
+custombasis_mp2_s = .true.
+
+method_mp2 = &quot;RI-MP2 def2-TZVP/C RIJK def2/JK Printbasis &quot;
+basis_mp2 = &quot;GTMP2largeXP&quot;
+custombasis_mp2 = .true.
+flag_RIMP2 = .true.
+flag_DLPNOMP2 = .false.
+
+method_hf3 = &quot;HF RIJK def2/JK Printbasis &quot;
+basis_hf3 = &quot;GFHFB3&quot;
+custombasis_hf3 = .true.
+
+method_hf4 = &quot;HF RIJK def2/JK Printbasis &quot;
+basis_hf4 = &quot;GFHFB4&quot;
+custombasis_hf4 = .true.
+
+HF_CBS_default      = .true.
+HF_CBS_orca_23_def2 = .false.
+HF_CBS_orca_34_def2 = .false.
+HF_CBS_orca_23_cc   = .false.
+HF_CBS_orca_34_cc   = .false.
+
+calc_HF = .true.
+
+calc_AE = .false.
+
+calc_IP = .false.
+verticalIP = .false.
+
+calc_EA = .false.
+verticalEA = .false.
+
+calc_PA = .false.
+
+calc_BE = .false.
+
+HLCeqZERO = .false.
+
+SO_3rdrow_mols = .true.
+
+conv_scf = &quot;VeryTight&quot;
+
+SCFDIIS  = .false.
+SOSCF    = .false.
+
+LSHIFT  = .false.
+
+optdiis = .false.
+
+restart_cc  = .false.
+restart_mp2 = .false.
+restart_hf3 = .false.
+restart_hf4 = .false.
+</pre></div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/inp_XP.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, SKD.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
+      
+      |
+      <a href="_sources/inp_XP.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

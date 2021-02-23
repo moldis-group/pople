@@ -2,18 +2,4 @@ theme: jekyll-theme-minimal
 logo: "/assets/img/pople5.png"
 email: "ramakrishnan@tifrh.res.in"
 github: moldis-group
-# Whether or not to show an excerpt for every blog post in the feed page
-feed_show_excerpt: true
-
-# Whether or not to show a list of tags below each post preview in the feed page
-feed_show_tags: true
-
-defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-    values:
-      layout: "default"
-      sidebars:
-        - generic
-        - jekyllhowto
+show_downloads: true

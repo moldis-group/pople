@@ -1,43 +1,13 @@
-# theme settings
-# theme                    : "minimal-mistakes-jekyll"
-remote_theme             : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "default"
+theme: jekyll-theme-minimal
+logo: "/assets/img/pople5.png"
+email: "ramakrishnan@tifrh.res.in"
+github: moldis-group
+show_downloads: true
 
-# Site Settings
-locale                   : "en-US"
-title                    : "Moritz D. Lürig"
-title_separator          : "-"
-subtitle                 : Postdoctoral scholar
-name                     : "Moritz D. Lürig"
-description              : "Moritz D. Lürig"
-words_per_minute         : 200
-
-github: [metadata]
-
-# Build settings
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jekyll-include-cache
-  - jekyll-titles-from-headings
-  - jekyll-remote-theme
-
-titles_from_headings:
-  enabled:     false
-  strip_title: true
-  collections: true 
-  
-analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
-  google:
-    tracking_id          :
-    anonymize_ip         : # true, false (default)
 
 # Site Author
 author:
-  name             : Moritz Lürig
+  name             : 
   avatar           : /assets/img/pople5.png
   bio: 
     Postdoctoral scholar in
@@ -61,88 +31,7 @@ author:
       icon: "fab fa-2x fa-fw fa-orcid"
       url: "https://orcid.org/0000-0002-8175-6234"
       
-footer:
-  links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/mluerig"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github-square"
-      url: "https://github.com/mluerig"
-    - label: "Linkedin"
-      icon: "fab fa-fw fa-linkedin-in"
-      url: "https://www.linkedin.com/in/mluerig/"
 
       
-include:
-  - .htaccess
-  - _pages
-  
-exclude:
-  - /local
-  - "*.sublime-project"
-  - "*.sublime-workspace"
-  - vendor
-  - .asset-cache
-  - .bundle
-  - .jekyll-assets-cache
-  - .sass-cache
-  - assets/js/plugins
-  - assets/js/_main.js
-  - assets/js/vendor
-  - Capfile
-  - CHANGELOG
-  - config
-  - Gemfile
-  - Gruntfile.js
-  - gulpfile.js
-  - LICENSE
-  - log
-  - node_modules
-  - package.json
-  - Rakefile
-  - README
-  - tmp
-  - /docs # ignore Minimal Mistakes /docs
-  - /test # ignore Minimal Mistakes /test
-  
-keep_files:
-  - .git
-  - .svn
-  
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-
-# Conversion
-markdown: kramdown
-highlighter: rouge
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
-
-# Markdown Processing
-kramdown:
-  input: GFM
-  hard_wrap: false
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
 
 
-# Sass/SCSS
-sass:
-  sass_dir: _sass
-  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
-
-
-defaults:
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      classes: wide
-      author_profile: false

@@ -1,4 +1,4 @@
-theme: "minimal-mistakes-jekyll"
+theme: jekyll-theme-minimal
 logo: "/assets/img/pople5.png"
 email: "ramakrishnan@tifrh.res.in"
 github: moldis-group

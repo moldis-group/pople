@@ -8,6 +8,12 @@ feed_show_excerpt: true
 # Whether or not to show a list of tags below each post preview in the feed page
 feed_show_tags: true
 
-sidebars:
-  - generic
-  - jekyllhowto
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+      sidebars:
+        - generic
+        - jekyllhowto

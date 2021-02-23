@@ -1,0 +1,5 @@
+test:
+  - title: Test
+    children:
+      - title: This is a test title
+        url: /

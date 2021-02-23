@@ -3,4 +3,8 @@ logo: "/assets/img/pople5.png"
 email: "ramakrishnan@tifrh.res.in"
 github: moldis-group
 show_downloads: true
-
+test:
+  - title: Test
+    children:
+      - title: This is a test title
+        url: /

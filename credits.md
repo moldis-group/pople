@@ -1,4 +1,4 @@
-## How to cite Pople?
+## How to cite?
 
 We kindly ask you to cite the underlying entry in your work using Pople.
 

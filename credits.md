@@ -12,4 +12,4 @@ The program is developed by the following members of the [Theory Lab, Tata Insti
 * Raghunathan Ramakrishnan
 
 ## Scientific Publications using Pople
-1. _Critical Benchmarking of the G4(MP2) Model, the Correlation Consistent Composite Approach and Popular Density Functional Approximations on a Probabilistically Pruned Benchmark Dataset of Formation Enthalpies_, Sambit Kumar Das, Sabyasachi Chakraborty, Raghunathan Ramakrishnan, The Journal of Chemical Physics, 154 (2021) 044113.
+1. [_Critical Benchmarking of the G4(MP2) Model, the Correlation Consistent Composite Approach and Popular Density Functional Approximations on a Probabilistically Pruned Benchmark Dataset of Formation Enthalpies_](https://doi.org/10.1063/5.0032713), Sambit Kumar Das, Sabyasachi Chakraborty, Raghunathan Ramakrishnan, The Journal of Chemical Physics, 154 (2021) 044113.

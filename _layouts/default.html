@@ -19,6 +19,13 @@
       <header>
         <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
         
+
+        
+        {% if site.logo %}
+          <img src="{{site.logo | relative_url}}" alt="Logo" />
+        {% endif %}
+        <p>{{ site.description | default: site.github.project_tagline }}</p>        
+
         <p>Site Navigation</p>
         <ol>
         <li><a href="https://moldis-group.github.io/Pople/installation.html">Installation</a></li>
@@ -29,12 +36,6 @@
         <li><a href="https://moldis-group.github.io/Pople/credits.html">Credits</a></li>  
         </ol>
         
-        {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" />
-        {% endif %}
-        <p>{{ site.description | default: site.github.project_tagline }}</p>        
-
-
       </header>
       
       <section>

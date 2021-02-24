@@ -5,14 +5,14 @@ We kindly ask you to cite the underlying entry in your work using Pople.
 Sambit Kumar Das, Salini Senthil, Sabyasachi Chakraborty, Raghunathan Ramakrishnan (2021) "Pople: A toolkit for ab initio thermochemistry" https://github.com/moldis-group/Pople-code-v01
 
 Bibtex entry
----
+```
 @article{das2021pople,
   title={Pople: A toolkit for ab initio thermochemistry},
   author={Das, SK and Senthil, S and Chakraborty, S and Ramakrishnan, R},
   journal={URL https://github.com/moldis-group/Pople-code-v01},
   year={2021}
 }
----
+```
 
 * * *
 

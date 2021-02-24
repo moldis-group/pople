@@ -1,5 +1,6 @@
 ---
 layout: default
+width: 1200
 ---
 
 TESTING

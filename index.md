@@ -1,6 +1,6 @@
 ---
 layout: default
-"CenteredModeMaxWidth": 1080
+classes: wide
 ---
 
 TESTING

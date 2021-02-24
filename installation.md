@@ -1,7 +1,7 @@
 
-# How to install Pople?
+## Installing Pople
 
-## Installing running Script
+#### Installing running Script
 ```
 $ pip install ----
 —-statement—-
@@ -12,10 +12,10 @@ $ pip install -----
 —-statement—-
 ```
 
-## Installing dependent libraries
+#### Installing dependent libraries
 ```
 $ pip install ----
 —-statement—-
 ```
 
-## Dependencies
+#### Dependencies

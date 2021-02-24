@@ -1,5 +1,6 @@
 ---
-layout-gt-sm: default
+layout: default
+"CenteredModeMaxWidth": 1080
 ---
 
 TESTING

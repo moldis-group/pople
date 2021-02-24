@@ -13,11 +13,11 @@ layout: default
   <li> Electron Affinity (vertical and adiabatic)
   <li> Proton Affinity
   <li> Intermolecular Binding Energy
-</ol>
+<\ol>
 
 ### Additional Options
 <ol>
   <li> All calculations can also be performed in a single point fashion with a user provided initial geometry and harmonic frequencies.
   <li> All empirical parameters such as reference standard enthalpies of atoms and higher-level correction (HLC) constants can be modified.
-</ol> 
+<\ol> 
 

@@ -21,4 +21,4 @@ layout: default
 1. All calculations can also be performed in a single point fashion with a user provided initial geometry and harmonic frequencies.
 2. All empirical parameters such as reference standard enthalpies of atoms and higher-level correction (HLC) constants can be modified.
  
-
+* * *

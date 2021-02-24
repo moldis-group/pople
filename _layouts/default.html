@@ -26,8 +26,9 @@
         {% endif %}
         <p>{{ site.description | default: site.github.project_tagline }}</p>        
 
-        <p>Site Navigation</p>
-
+        <br>
+        <br>
+        Site Navigation<br>
         1. <a href="https://moldis-group.github.io/Pople/installation.html">Installation</a><br>
         2. <a href="https://moldis-group.github.io/Pople/tutorials.html">Tutorials</a><br>   
         3. <a href="https://moldis-group.github.io/Pople/manual.html">Manual</a><br>
@@ -35,16 +36,20 @@
         5. <a href="https://moldis-group.github.io/Pople/openissues.html">Open Issues</a><br>  
         6. <a href="https://moldis-group.github.io/Pople/credits.html">Credits</a><br>  
 
-        
+         <small> 
+        {% if site.github.is_project_page %}
+        <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
+        {% endif %}
+        </small>
       </header>
       
       <section>
       {{ content }}
       </section>
      
-      <footer>
+
 <!--
- 
+       <footer>
         <p>Site Navigation</p>
         <ol>
         <li><a href="https://moldis-group.github.io/Pople/installation.html">Installation</a></li>
@@ -54,15 +59,10 @@
         <li><a href="https://moldis-group.github.io/Pople/openissues.html">Open Issues</a></li>  
         <li><a href="https://moldis-group.github.io/Pople/credits.html">Credits</a></li>  
         </ol>
+     </footer>
 -->
-       <small> 
- 
-        {% if site.github.is_project_page %}
-        <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
-        {% endif %}
-        </small>
 
-      </footer>
+ 
       
     </div>
     

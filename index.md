@@ -1,5 +1,5 @@
 ---
-layout: default
+layout-gt-sm: default
 width: 1200
 ---
 

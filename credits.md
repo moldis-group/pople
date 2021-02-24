@@ -6,7 +6,7 @@ Sambit Kumar Das, Salini Senthil, Sabyasachi Chakraborty, Raghunathan Ramakrishn
 
 * * *
 
-## Contributors:
+## Contributors
 The program is developed by the following members of the [Theory Lab](https://www.tifrh.res.in/~ramakrishnan/) at the Tata Institute of Fundamental Research Hyderabad, India
 
 * Sambit Kumar Das 

@@ -3,7 +3,7 @@ layout: default
 ---
 
 ### The Code
-**Pople** is a program to perform thermochemistry calculations using the G4(MP2) formalism. The present version (Pople v1.0) depends on the ORCA quantum chemistry program package (https://www.faccts.de/orca/) for all the electronic structure calculations. Pople enables customizing every step in a G4(MP2) calculation, facilitating the user to explore effects of level of theories and basis sets on the speed and accuracy.
+**Pople** is a program to perform thermochemistry calculations using the G4(MP2) formalism. The present version [Pople v1.0](https://github.com/moldis-group/Pople) depends on the [ORCA quantum chemistry program package](https://www.faccts.de/orca/) for all the electronic structure calculations. Pople enables customizing every step in a G4(MP2) calculation, facilitating the user to explore effects of level of theories and basis sets on the speed and accuracy.
 
 * * *
 

@@ -21,11 +21,3 @@ Pople allows one to perform thermochemistry calculations using the G4(MP2) forma
   <li> All empirical parameters such as reference standard enthalpies of atoms and higher-level correction (HLC) constants can be modified.
 </ol> 
 
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```

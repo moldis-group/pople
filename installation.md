@@ -3,19 +3,9 @@
 
 #### Installing running Script
 ```
-$ pip install ----
-—-statement—-
+$ pip install pople
 ```
-
-```
-$ pip install -----
-—-statement—-
-```
-
-#### Installing dependent libraries
-```
-$ pip install ----
-—-statement—-
-```
-
 #### Dependencies
+```
+numpy
+```

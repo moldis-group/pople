@@ -7,7 +7,8 @@ layout: default
    > 1.1 [Basic input file structure](#1.1-Basic-input-file-structure)  
    > 1.2 [Basic input keywords](#1.2-Basic-input-keywords)  
    > 1.3 [Basic input for heat of formation of H2O](#1.3-Basic-input-for-heat-of-formation-of-H2O)  
-   > 1.4 [Basic input for ionization potential of H2O](#1.4-Basic-input-for-ionization-potential-of-H2O)
+   > 1.4 [Basic input for ionization potential of H2O](#1.4-Basic-input-for-ionization-potential-of-H2O)  
+2 [Advanced input options](#2-Advanced-input-options)
    
 
 ## 1 Basic input file
@@ -44,15 +45,6 @@ Options available are
 * g4mp2-xp (same as G4MP2-XP)
 ```
 
->> Example for geometry blocks are provided in the following sections 1.3 and 1.4
-```
-geom_1
-...
-
-end_geom
-```
-
-
 ```
 job_type    = ...
 Options available are 
@@ -62,6 +54,14 @@ Options available are
 * ea (same as EA), for electron affinity
 * pa (same as PA), for proton affinity
 * be (same as BE), for binding energy
+```
+
+>> Example for geometry blocks are provided in the following sections 1.3 and 1.4
+```
+geom_1
+...
+
+end_geom
 ```
 
 ```

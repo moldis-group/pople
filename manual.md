@@ -1,8 +1,8 @@
 
 # Content:
-1. [Basic input file](#1.-Basic-input-file)
-   > 1.1 [Basic Input file structure](#1.1-Basic-input-file-structure)
-   > 1.2 [Basic input for heat of formation of H2O](#1.2-Basic-input-for-heat-of-formation-of-H2O)
+1. [Basic input file](#1.-Basic-input-file)  
+   > 1.1 [Basic Input file structure](#1.1-Basic-input-file-structure)  
+   > 1.2 [Basic input for heat of formation of H2O](#1.2-Basic-input-for-heat-of-formation-of-H2O)  
    
 
 

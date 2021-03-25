@@ -1,7 +1,8 @@
 
-## Manual
+# Content:
+1. [Basic Input file structure (pople.inp)](#1.-Basic-Input-file-structure-(pople.inp))
 
-### Basic Input file structure (pople.inp)
+### 1. Basic Input file structure (pople.inp)
 The simplest input file requires 6 keywords and one or two geometry blocks (Cartesian coordinates in Angstrom). 
 * When job_type is 'HF' (heat of formation) or 'AE' (atomization energy), one geometry is required.
 * When job_type is 'IP' (ionization energy), 'EA' (electron affinity), 'PA' (proton affinity) or 'BE' (binding energy), two geometries are required. 

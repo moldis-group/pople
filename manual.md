@@ -8,8 +8,12 @@ layout: default
    > 1.2 [Basic input keywords](#1.2-Basic-input-keywords)  
    > 1.3 [Basic input for heat of formation of H2O](#1.3-Basic-input-for-heat-of-formation-of-H2O)  
    > 1.4 [Basic input for ionization potential of H2O](#1.4-Basic-input-for-ionization-potential-of-H2O)
+
+2 [Example input/output files](#2.-Example-input/output-files)
+   > 2.1 [Heat of formation of H2O](#2.1-Heat-of-formation-of-H2O)  
+   > 2.2 [Ionization potential of H2O](#2.2-Ionization-potential-of-H2O)
    
-2 [Advanced input options](#2-Advanced-input-options)
+3 [Advanced input options](#3-Advanced-input-options)
    
 
 ## 1 Basic input file

@@ -25,24 +25,27 @@ orca_dir    = ...
 ```
 ### Basic input for heat of formation of H2O
 
->> NOTE: All strings followed by a has ('#') will be treated as a comment and be ignored by the program.
+>> NOTE: Any string followed by a hash ('#') will be treated as a comment and be ignored by the program.
+>> The input file can have empty lines.
 
 ```
 #=== Method and job ==================================================
-method_type = g4mp2  # g4mp2 or g4mp2-xp
-job_type    = HF     # 
+method_type = g4mp2
+job_type    = HF
 
 #=== geometry ========================================================
 geom_1
-           3
-           0           1
+           3              # Number of atoms    
+           0           1  # Charge       Multiplicity
  O        0.00000000     0.00000000     0.00000000
  H        0.96854000     0.00000000     0.00000000
  H       -0.22812000     0.00000000    -0.94129000
+
 end_geom
+
 #=== memory and processors ===========================================
-maxcore_mb  = 1024
-nproc       = 1
+maxcore_mb  = 1024       # RAM memory per core in megabytes, 1024 MB is 1 GB
+nproc       = 1          # Number of CPU cores 
 
 #=== Paths ===========================================================
 openmpi_dir = /apps/openmpi-3.0.0_install/

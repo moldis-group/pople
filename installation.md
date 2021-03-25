@@ -1,9 +1,9 @@
 
 ## Installing Pople
 
-#### Installing running Script
+#### Installing with pip
 ```
-$ pip install pople
+$ pip3 install pople
 ```
 #### Dependencies
 ```

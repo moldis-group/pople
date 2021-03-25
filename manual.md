@@ -1,13 +1,13 @@
 
 # Content:
-1. [Basic input file](#1.-Basic-input-file)  
-   > 1.1 [Basic Input file structure](#1.1-Basic-input-file-structure)  
-   > 1.2 [Basic input for heat of formation of H2O](#1.2-Basic-input-for-heat-of-formation-of-H2O)  
-   > 1.3 [Basic input for ionization potential of H2O](#1.3-Basic-input-for-ionization-potential-of-H2O)
+1 [Basic input file](#1-Basic-input-file)  
+   > 1.1 [Basic input file structure](#1.1-Basic-input-file-structure)  
+   > 1.2 [Basic input keywords](#1.2-Basic-input-keywords)
+   > 1.3 [Basic input for heat of formation of H2O](#1.3-Basic-input-for-heat-of-formation-of-H2O)  
+   > 1.4 [Basic input for ionization potential of H2O](#1.4-Basic-input-for-ionization-potential-of-H2O)
    
 
-
-## 1. Basic input file
+## 1 Basic input file
 >> The input file must be named as pople.inp
 
 ### 1.1 Basic input file structure
@@ -32,7 +32,34 @@ nproc       = ...
 openmpi_dir = ...
 orca_dir    = ...
 ```
-### 1.2 Basic input for heat of formation of H2O
+### 1.2 Basic input keywords
+>> Example for geometry blocks are provided in the following sections 1.3 and 1.4
+
+```
+method_type = ...
+```
+
+```
+job_type    = ...
+```
+
+```
+maxcore_mb  = ...
+```
+
+```
+nproc       = ...
+```
+
+```
+openmpi_dir = ...
+```
+
+```
+orca_dir    = ...
+```
+
+### 1.3 Basic input for heat of formation of H2O
 
 >> NOTE: Any string followed by a hash ('#') will be treated as a comment and be ignored by the program.
 >> The input file can have empty lines.
@@ -62,7 +89,7 @@ orca_dir    = /apps/orca_4_1_2_linux_x86-64_shared_openmpi215/
 
 ```
 
-### 1.3 Basic input for ionization potential of H2O
+### 1.4 Basic input for ionization potential of H2O
 >> NOTE: As noted in [Basic input file](#1.-Basic-input-file)  job_type = IP requires two geometry blocks. The first is for the neutral system and the second is for the cation. Please provide appropriate charge and multiplicity.
 
 ```

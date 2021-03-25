@@ -13,7 +13,9 @@ layout: default
    > 2.1 [Heat of formation of H2O](#2.1-Heat-of-formation-of-H2O)  
    > 2.2 [Ionization potential of H2O](#2.2-Ionization-potential-of-H2O)
    
-3 [Advanced input options](#3-Advanced-input-options)
+3 [More input options](#3-More-input-options)
+
+4 [Advanced input options](#4-Advanced-input-options)
    
 
 ## 1 Basic input file

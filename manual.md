@@ -1,3 +1,6 @@
+---
+layout: default
+---
 
 # Content:
 1 [Basic input file](#1-Basic-input-file)  

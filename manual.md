@@ -60,3 +60,40 @@ openmpi_dir = /apps/openmpi-3.0.0_install/
 orca_dir    = /apps/orca_4_1_2_linux_x86-64_shared_openmpi215/
 
 ```
+
+### 1.2 Basic input for ionization potential of H2O
+>> NOTE: As noted in [Basic input file](#1.-Basic-input-file)  job_type = IP requires two geometry blocks. The first is for the neutral system and the second is for the cation. Please provide appropriate charge and multiplicity.
+
+```
+#=== Method and job ==================================================
+method_type = g4mp2
+job_type    = IP
+
+#=== geometry ========================================================
+geom_1  # H2O, neutral
+           3                  
+           0           1  
+ O        0.00000000     0.00000000     0.00000000
+ H        0.96854000     0.00000000     0.00000000
+ H       -0.22812000     0.00000000    -0.94129000
+
+end_geom
+
+geom_2  # H2O, cation
+           3                  
+           1           2 
+ O        0.00000000     0.00000000     0.00000000
+ H        1.01249000     0.00000000     0.00000000
+ H       -0.34159000     0.00000000    -0.95313000
+
+end_geom
+
+#=== memory and processors ===========================================
+maxcore_mb  = 1024       
+nproc       = 1          
+
+#=== Paths ===========================================================
+openmpi_dir = /apps/openmpi-3.0.0_install/
+orca_dir    = /apps/orca_4_1_2_linux_x86-64_shared_openmpi215/
+
+```

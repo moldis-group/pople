@@ -48,12 +48,12 @@ Options available are
 ```
 job_type    = ...
 Options available are 
-* hf (same as HF)
-* ae (same as AE)
-* ip (same as IP)
-* ea (same as EA)
-* pa (same as PA)
-* be (same as BE)
+* hf (same as HF), for heat of formation
+* ae (same as AE), for atomization energy
+* ip (same as IP), for ionization potential
+* ea (same as EA), for electron affinity
+* pa (same as PA), for proton affinity
+* be (same as BE), for binding energy
 ```
 
 ```
@@ -91,7 +91,7 @@ method_type = g4mp2
 job_type    = HF
 
 #=== geometry ========================================================
-geom_1
+geom_1  # The next line cannot be empty
            3              # Number of atoms    
            0           1  # Charge       Multiplicity
  O        0.00000000     0.00000000     0.00000000
@@ -119,7 +119,7 @@ method_type = g4mp2
 job_type    = IP
 
 #=== geometry ========================================================
-geom_1  # H2O, neutral
+geom_1  # H2O, neutral, the next line cannot be empty
            3                  
            0           1  
  O        0.00000000     0.00000000     0.00000000
@@ -128,7 +128,7 @@ geom_1  # H2O, neutral
 
 end_geom
 
-geom_2  # H2O, cation
+geom_2  # H2O, cation, the next line cannot be empty
            3                  
            1           2 
  O        0.00000000     0.00000000     0.00000000

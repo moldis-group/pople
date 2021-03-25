@@ -3,6 +3,7 @@
 1. [Basic input file](#1.-Basic-input-file)  
    > 1.1 [Basic Input file structure](#1.1-Basic-input-file-structure)  
    > 1.2 [Basic input for heat of formation of H2O](#1.2-Basic-input-for-heat-of-formation-of-H2O)  
+   > 1.3 [Basic input for ionization potential of H2O](#1.3-Basic-input-for-ionization-potential-of-H2O)
    
 
 
@@ -61,7 +62,7 @@ orca_dir    = /apps/orca_4_1_2_linux_x86-64_shared_openmpi215/
 
 ```
 
-### 1.2 Basic input for ionization potential of H2O
+### 1.3 Basic input for ionization potential of H2O
 >> NOTE: As noted in [Basic input file](#1.-Basic-input-file)  job_type = IP requires two geometry blocks. The first is for the neutral system and the second is for the cation. Please provide appropriate charge and multiplicity.
 
 ```

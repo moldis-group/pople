@@ -1,25 +1,21 @@
 
 ## Manual
 
-#### Input file structure
+### Basic Input file structure (pople.inp)
+The simplest input file requires 6 keywords and one or two geometry blocks (Cartesian coordinates in Angstrom). 
+* When job_type is 'HF' (heat of formation) or 'AE' (atomization energy), one geometry is required.
+* When job_type is 'IP' (ionization energy), 'EA' (electron affinity), 'PA' (proton affinity) or 'BE' (binding energy), two geometries are required. 
+* Examples for each job_type are given below
+
 ```
-#=== Method and job ==================================================
 method_type = ...
 job_type    = ...
-#=== geometry ========================================================
 geom_1
 ...
 
 end_geom
-#=== second geometry, cation =========================================
-geom_2
-...
-
-end_geom
-#=== memory and processors ===========================================
 maxcore_mb  = ...
 nproc       = ...
-#=== Paths ===========================================================
 openmpi_dir = ...
 orca_dir    = ...
 ```

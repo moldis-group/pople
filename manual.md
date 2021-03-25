@@ -2,7 +2,7 @@
 # Content:
 1 [Basic input file](#1-Basic-input-file)  
    > 1.1 [Basic input file structure](#1.1-Basic-input-file-structure)  
-   > 1.2 [Basic input keywords](#1.2-Basic-input-keywords)
+   > 1.2 [Basic input keywords](#1.2-Basic-input-keywords)  
    > 1.3 [Basic input for heat of formation of H2O](#1.3-Basic-input-for-heat-of-formation-of-H2O)  
    > 1.4 [Basic input for ionization potential of H2O](#1.4-Basic-input-for-ionization-potential-of-H2O)
    
@@ -18,7 +18,7 @@ The simplest input file requires 6 keywords and one or two geometry blocks (Cart
 
 The input file (pople.inp) can also take advanced options for fine-tuning the input for electronic structure calculations. See examples below.
 
->> NOTE: The keywords in the input should be in lower cases. The corresponding values can be in lower or upper cases.
+>> NOTE: The keywords in the input should be in lower cases. The corresponding values can be in all-lower or all-upper cases.
 
 ```
 method_type = ...
@@ -37,26 +37,43 @@ orca_dir    = ...
 
 ```
 method_type = ...
+Options available are 
+* g4mp2 (same as G4MP2)
+* g4mp2-xp (same as G4MP2-XP)
 ```
 
 ```
 job_type    = ...
+Options available are 
+* hf (same as HF)
+* ae (same as AE)
+* ip (same as IP)
+* ea (same as EA)
+* pa (same as PA)
+* be (same as BE)
 ```
 
 ```
 maxcore_mb  = ...
+* RAM memory per core in megabytes, 1024 stands for 1 GB. The value has to be an integer. 
+* example: maxcore_mb  = 1024
 ```
 
 ```
 nproc       = ...
+* Number of CPU cores. The value has to be an integer. 
 ```
 
 ```
 openmpi_dir = ...
+* PATH for openmpi libraries
+* example: openmpi_dir = /apps/openmpi-3.0.0_install/
 ```
 
 ```
 orca_dir    = ...
+* PATH where orca is installed
+* example: orca_dir    = /apps/orca_4_1_2_linux_x86-64_shared_openmpi215/ 
 ```
 
 ### 1.3 Basic input for heat of formation of H2O

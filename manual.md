@@ -9,6 +9,8 @@ The simplest input file requires 6 keywords and one or two geometry blocks (Cart
 
 The input file (pople.inp) can also take advanced options for fine-tuning the input for electronic structure calculations. See examples below.
 
+>> NOTE: The keywords in the input should be in lower cases. The corresponding values can be in lower or upper cases.
+
 ```
 method_type = ...
 job_type    = ...
@@ -21,7 +23,29 @@ nproc       = ...
 openmpi_dir = ...
 orca_dir    = ...
 ```
-#### Dependencies
+### Basic input for heat of formation of H2O
+
+>> NOTE: All strings followed by a has ('#') will be treated as a comment and be ignored by the program.
+
 ```
-numpy
+#=== Method and job ==================================================
+method_type = g4mp2  # g4mp2 or g4mp2-xp
+job_type    = HF     # 
+
+#=== geometry ========================================================
+geom_1
+           3
+           0           1
+ O        0.00000000     0.00000000     0.00000000
+ H        0.96854000     0.00000000     0.00000000
+ H       -0.22812000     0.00000000    -0.94129000
+end_geom
+#=== memory and processors ===========================================
+maxcore_mb  = 1024
+nproc       = 1
+
+#=== Paths ===========================================================
+openmpi_dir = /apps/openmpi-3.0.0_install/
+orca_dir    = /apps/orca_4_1_2_linux_x86-64_shared_openmpi215/
+
 ```

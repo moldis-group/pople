@@ -62,6 +62,7 @@ maxcore_mb  = ...
 ```
 nproc       = ...
 * Number of CPU cores. The value has to be an integer. 
+* example: nproc = 1
 ```
 
 ```

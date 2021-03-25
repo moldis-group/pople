@@ -7,6 +7,8 @@ The simplest input file requires 6 keywords and one or two geometry blocks (Cart
 * When job_type is 'IP' (ionization energy), 'EA' (electron affinity), 'PA' (proton affinity) or 'BE' (binding energy), two geometries are required. 
 * Examples for each job_type are given below
 
+The input file (pople.inp) can also take advanced options for fine-tuning the input for electronic structure calculations. See examples below.
+
 ```
 method_type = ...
 job_type    = ...

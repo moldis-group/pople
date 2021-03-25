@@ -36,7 +36,6 @@ openmpi_dir = ...
 orca_dir    = ...
 ```
 ### 1.2 Basic input keywords
->> Example for geometry blocks are provided in the following sections 1.3 and 1.4
 
 ```
 method_type = ...
@@ -44,6 +43,15 @@ Options available are
 * g4mp2 (same as G4MP2)
 * g4mp2-xp (same as G4MP2-XP)
 ```
+
+>> Example for geometry blocks are provided in the following sections 1.3 and 1.4
+```
+geom_1
+...
+
+end_geom
+```
+
 
 ```
 job_type    = ...

@@ -1,8 +1,15 @@
 
 # Content:
-1. [Basic Input file structure (pople.inp)](#1.-Basic-Input-file-structure-(pople.inp))
+1. [Basic input file](#1.-Basic-input-file)
+   > 1.1 [Basic Input file structure](#1.1-Basic-input-file-structure)
+   > 1.2 [Basic input for heat of formation of H2O](#1.2-Basic-input-for-heat-of-formation-of-H2O)
+   
 
-### 1. Basic Input file structure (pople.inp)
+
+## 1. Basic input file
+>> The input file must be named as pople.inp
+
+### 1.1 Basic input file structure
 The simplest input file requires 6 keywords and one or two geometry blocks (Cartesian coordinates in Angstrom). 
 * When job_type is 'HF' (heat of formation) or 'AE' (atomization energy), one geometry is required.
 * When job_type is 'IP' (ionization energy), 'EA' (electron affinity), 'PA' (proton affinity) or 'BE' (binding energy), two geometries are required. 
@@ -24,7 +31,7 @@ nproc       = ...
 openmpi_dir = ...
 orca_dir    = ...
 ```
-### Basic input for heat of formation of H2O
+### 1.2 Basic input for heat of formation of H2O
 
 >> NOTE: Any string followed by a hash ('#') will be treated as a comment and be ignored by the program.
 >> The input file can have empty lines.

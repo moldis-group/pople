@@ -99,7 +99,7 @@ orca_dir    = ...
 method_type = g4mp2
 job_type    = HF
 
-#=== geometry ========================================================
+#=== Geometry ========================================================
 geom_1  # The next line cannot be empty
            3              # Number of atoms    
            0           1  # Charge       Multiplicity
@@ -109,7 +109,7 @@ geom_1  # The next line cannot be empty
 
 end_geom
 
-#=== memory and processors ===========================================
+#=== Memory and processors ===========================================
 maxcore_mb  = 1024       # RAM memory per core in megabytes, 1024 MB is 1 GB
 nproc       = 1          # Number of CPU cores 
 
@@ -127,7 +127,7 @@ orca_dir    = /apps/orca_4_1_2_linux_x86-64_shared_openmpi215/
 method_type = g4mp2
 job_type    = IP
 
-#=== geometry ========================================================
+#=== Geometry ========================================================
 geom_1  # H2O, neutral, the next line cannot be empty
            3                  
            0           1  
@@ -146,7 +146,7 @@ geom_2  # H2O, cation, the next line cannot be empty
 
 end_geom
 
-#=== memory and processors ===========================================
+#=== Memory and processors ===========================================
 maxcore_mb  = 1024       
 nproc       = 1          
 

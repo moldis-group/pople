@@ -1,4 +1,4 @@
 ---
 layout: default
 ---
-Coming soon!
+coming soon!

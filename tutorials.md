@@ -9,7 +9,11 @@ layout: default
 
 2 [Sample input/output files](#2.-Example-input/output-files)
    > 2.1 [Heat of formation of H2O](#2.1-Heat-of-formation-of-H2O)  
-   > 2.2 [Ionization potential of H2O](#2.2-Ionization-potential-of-H2O)
+   > 2.2 [Atomization energy of H2O](#2.2-Atomization-energy-of-H2O)  
+   > 2.3 [Ionization potential of H2O](#2.3-Ionization-potential-of-H2O)
+   > 2.4 [Electron affinity of HO](#2.4-Electron-affinity-of-HO)
+   > 2.5 [Proton energy of H2O](#2.5-Proton-energy-of-H2O)
+   > 2.6 [Binding energy of H2O dimer](#2.6-Binding-energy-of-H2O-dimer)
  
 ## 1 How to run pople?
 >> See [Installation](#https://moldis-group.github.io/pople/installation.html) for installing the code. 
@@ -17,15 +21,18 @@ layout: default
 performed either interactively on a python terminal or one can use a script.
 
 ### 1.1 Interactive mode
+Interactive mode is typically recommded for small systems. Prepare pople.inp in the workding direct, open a python3 terminal and type the following lines
 ```
-method_type = ...
-job_type    = ...
-geom_1
-...
+import pople
+value=pople.run()
+```
 
-end_geom
-maxcore_mb  = ...
-nproc       = ...
-openmpi_dir = ...
-orca_dir    = ...
-```
+### 1.2 Batch mode
+All the python commands can be included in a script, say run.py and the commands can be executed as python3 run.py
+
+## 2 Sample input/output files
+The code pople generates three output files. 
+* Thermochemistry.out -- Contains a summary of results 
+* ORCA_G4MP2.com -- All the input files for orca calculations are appended 
+* ORCA_G4MP2.out -- All the output files for orca calculations are appended
+

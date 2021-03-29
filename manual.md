@@ -12,10 +12,8 @@ layout: default
 2 [Example input/output files](#2.-Example-input/output-files)
    > 2.1 [Heat of formation of H2O](#2.1-Heat-of-formation-of-H2O)  
    > 2.2 [Ionization potential of H2O](#2.2-Ionization-potential-of-H2O)
-   
-3 [More input options](#3-More-input-options)
 
-4 [Advanced input options](#4-Advanced-input-options)
+3 [Advanced input options](#3-Advanced-input-options)
    
 
 ## 1 Basic input file
@@ -161,3 +159,7 @@ openmpi_dir = /apps/openmpi-3.0.0_install/
 orca_dir    = /apps/orca_4_1_2_linux_x86-64_shared_openmpi215/
 
 ```
+
+## 3 Advanced input options
+>> Advanced options are available to control every step in the thermochemistry calculations. It is also possible to perform frozen-geometry calculations. Keywords for these options will be updated soon.
+

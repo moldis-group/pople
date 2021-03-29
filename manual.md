@@ -96,7 +96,7 @@ orca_dir    = ...
 ### 1.3 Basic input for heat of formation of H2O
 
 >> NOTE: Any string followed by a hash ('#') will be treated as a comment and be ignored by the program.
->> Comments cannot appear within the geometry block
+>> Comments cannot appear within the geometry block.
 >> The input file can have empty lines.
 
 ```

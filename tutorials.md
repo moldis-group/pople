@@ -7,13 +7,13 @@ layout: default
    > 1.1 [Interactive mode](#1.1-Interactive-mode)  
    > 1.2 [Batch mode](#1.2-Batch-mode)  
 
-2 [Sample input/output files](#2.-Example-input/output-files)
-   > 2.1 [Heat of formation of H2O](#2.1-Heat-of-formation-of-H2O)  
-   > 2.2 [Atomization energy of H2O](#2.2-Atomization-energy-of-H2O)  
-   > 2.3 [Ionization potential of H2O](#2.3-Ionization-potential-of-H2O)
-   > 2.4 [Electron affinity of HO](#2.4-Electron-affinity-of-HO)
-   > 2.5 [Proton energy of H2O](#2.5-Proton-energy-of-H2O)
-   > 2.6 [Binding energy of H2O dimer](#2.6-Binding-energy-of-H2O-dimer)
+2 [Sample input/output files](#2.-Example-input/output-files)  
+   > 2.1 [Heat of formation of H2O](#2.1-Heat-of-formation-of-H2O)    
+   > 2.2 [Atomization energy of H2O](#2.2-Atomization-energy-of-H2O)    
+   > 2.3 [Ionization potential of H2O](#2.3-Ionization-potential-of-H2O)    
+   > 2.4 [Electron affinity of HO](#2.4-Electron-affinity-of-HO)     
+   > 2.5 [Proton energy of H2O](#2.5-Proton-energy-of-H2O)     
+   > 2.6 [Binding energy of H2O dimer](#2.6-Binding-energy-of-H2O-dimer)    
  
 ## 1 How to run pople?
 >> See [Installation](#https://moldis-group.github.io/pople/installation.html) for installing the code. 

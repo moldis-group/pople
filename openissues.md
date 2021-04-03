@@ -6,9 +6,9 @@ Following B3LYP/6-31G(2df,p) geometry optimization and frequency calculations, t
 
 
 '''
- restart_cc  = false
- restart_mp2 = false
- restart_hf3 = false
- restart_hf4 = false
+  restart_cc  = false  
+  restart_mp2 = false  
+  restart_hf3 = false  
+  restart_hf4 = false  
 '''
 

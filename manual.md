@@ -15,7 +15,7 @@ layout: default
 
 3 [Advanced input options](#3-Advanced-input-options)
 
-3 [Tricky cases](#4-Tricky-cases)
+4 [Tricky cases](#4-Tricky-cases)
    
 
 ## 1 Basic input file

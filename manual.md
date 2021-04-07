@@ -9,7 +9,7 @@ layout: default
    > 1.3 [Basic input for heat of formation of H2O](#1.3-Basic-input-for-heat-of-formation-of-H2O)  
    > 1.4 [Basic input for ionization potential of H2O](#1.4-Basic-input-for-ionization-potential-of-H2O)
 
-2 [Converging-tricky cases](#2-Converging-tricky-cases)
+2 [Tricky cases](#2-Tricky-cases)
 
 3 [Advanced input options](#3-Advanced-input-options)
 
@@ -160,7 +160,7 @@ orca_dir    = /apps/orca_4_1_2_linux_x86-64_shared_openmpi215/
 
 ```
 
-## 2 Converging tricky cases
+## 2 Tricky cases
 >> Following are known situations where convergence is facilitated by using advanced input options 
 
 ### 2.1 G4(MP2) calculation of heat-of-formation of phenyl radical 

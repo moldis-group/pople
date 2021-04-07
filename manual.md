@@ -167,7 +167,7 @@ orca_dir    = /apps/orca_4_1_2_linux_x86-64_shared_openmpi215/
 >> Advanced options are available to control every step in the thermochemistry calculations. It is also possible to perform frozen-geometry calculations. Keywords for these options will be updated soon.
 
 ## 4 Tricky cases
->> Advanced options are available to control every step in the thermochemistry calculations. It is also possible to perform frozen-geometry calculations. Keywords for these options will be updated soon.
+>> Following are known situations where convergence is facilitated by using advanced input options 
 
 ### 1. G4(MP2) calculation of heat-of-formation of phenyl radical 
 Following B3LYP/6-31G(2df,p) geometry optimization and frequency calculations, the SCF calculations in the CCSD(T), MP2 and HF steps are failing. We recommend to converge the corresponding dication (i.e., charge=+2) of the same multiplicity and use the density to restart the SCF calculations for the neutral system. This can be done by including the following options at the end of the input file, pople.inp

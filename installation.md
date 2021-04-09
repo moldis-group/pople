@@ -13,5 +13,7 @@ python3 setup.py install --user
 ```
 ### Dependencies
 ```
+orca 4.2.0 and above
+python3.7 and above
 numpy
 ```

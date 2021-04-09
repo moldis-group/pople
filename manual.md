@@ -180,13 +180,5 @@ G4(MP2)-XP (method_type = g4mp2-xp) uses  RI-B3LYP for geometry optimization wit
   method_opt_freq = B3LYP/G Grid5 RIJCOSX def2/J GridX5 
 ```
 
-### 2.3 G4(MP2)-XP calculation of ionization energy of the H atom
-The cation of H is H+ with no electrons. When method_type is g4mp2, calculations for a zero-electron system is skipped and the energy is set to zero. This has not been enabled for method_type=g4mp2-xp. This requires some modification in the code where the DLPNO-CCSD(T) calculation is requested. Presently, a quick remedy is to include the following options at the end of the input file, pople.inp and to replace the DLPNO-CCSD(T) calculation by a CCSD(T) calculation. Alternatively, one can depend on a g4mp2 calculation for the IP of H atom.
-
-```
- method_ccsdt = CCSD(T) RIJK def2/JK TightPNO 
-```
-
-
 ## 3 Advanced input options
 >> Advanced options are available to control every step in the thermochemistry calculations. It is also possible to perform frozen-geometry calculations. Keywords for these options will be updated soon.

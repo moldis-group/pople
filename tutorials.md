@@ -11,9 +11,10 @@ layout: default
    > 2.2 [Composite input](#2.2-Composite-input)
 
 3 [Advanced calculations](#3.-Advanced-calculations)
-   > 3.1 [Frozen geometry calculation](#3.1-Frozen-geometry-calculation)
-   > 3.2 [Atomization energy](#3.2-Atomization-energy)
-   > 3.3 [Enthalpy of formation](#3.3-Enthalpy-of-formation)
+   > 3.1 [Frozen geometry calculation](#3.1-Frozen-geometry-calculation)   
+   > 3.2 [Atomization energy](#3.2-Atomization-energy)   
+   > 3.3 [Enthalpy of formation](#3.3-Enthalpy-of-formation)   
+   > 3.4 [Multiple calculations](#3.4-Multiple-calculations)  
  
 ## 1 How to run pople?
 >> See [Installation](https://moldis-group.github.io/pople/installation.html) for installing the code. 
@@ -157,7 +158,7 @@ Water molecule's IP calculated with the `method='g4mp2'` turns out to be `12.590
 The test jobs `test_002_ionizationenergy_H2O`, `test_004_electronaffinity_Cl`, `test_005_protonaffinity_NH3`, and `test_006_bindingenergy_HFdimer`
  contain input/output files for simple composite calculations. 
  
- ### 3.1 Frozen geometry calculation
+### 3.1 Frozen geometry calculation
  
  The test job `test_003_enthalpy_H2_frozen_geom` shows how an optimized geometry and harmonic frequencies can be provided externally and a `g4mp2` enthalpy calculation can be performed in a single-point fashion. This requires the keyword `frozengeom` to be set to the value `'true'`, and harmonic frequencies (in cm^-1) are provided using a frequency block named here as `freq` and made as the argument to the keyword `freqcmi`.
  
@@ -214,7 +215,7 @@ print( ' Atomization energy of CH4 is ', (U0_atoms_total-U0_mol) * au2kcm, ' kca
 ```
 which results in a value of `392.2148` kcal/mol which is in good agreement with the experimental value `397.94` kcal/mol.
 
- ### 3.3 Enthalpy of formation
+### 3.3 Enthalpy of formation
  
  The test jobs `test_008_formationenthalpy_CH4` shows how to calculate the standard formation enthalpy of CH4 using previously determined atomization energy.
  
@@ -266,3 +267,28 @@ for i_ua in range(N_ua):
 
 print( ' Standard formation enthalpy (at 298.15 K) of CH4 is ', HT_form * au2kcm, ' kcal/mol')
  ```
+ 
+### 3.4 Multiple calculations
+ 
+The test job `test_009_methods_comparison_CH4` shows how to perform calculations with two methods using a for loop, compare the results in a table. 
+ 
+The test job `test_010_methods_comparison_C6H6_parallel` presents similar results for the benzene molecule using 8 processors.
+
+A comparison of the results (included as comments at the bottom of the inp.py files in both directories) shows that the accuracy of g4mp2-xp is marginally better compared to g4mp2. The speed in g4mp2-xp, due to DLPNO and RI approxations is noticeable for the larger molecule C6H6.
+
+ 
+```
+Method              Atm. energy (kcal/mol)    Form. enthalpy (kcal/mol)   Time (sec) 
+
+CH4
+
+g4mp2                           392.2148            -17.6105               122.4531
+g4mp2-xp                        392.2910            -17.6868               191.8379
+Exp.                            397.94              -17.90
+
+C6H6
+
+g4mp2                          1306.6164             18.8675              1264.3296
+g4mp2-xp                       1305.8573             19.6262               796.0674
+Exp.                                                 19.70
+```

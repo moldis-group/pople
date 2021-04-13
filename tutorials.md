@@ -109,8 +109,10 @@ H=out[2]
 print(' Standard enthalpy (at 298.15 K) is ', H,' hartree')
 ```
 
-### 2.2 Composite input
-Following is the input for calculating the adiabatic ionization energy of the water molecule. The calculation returns zero-Kelvin internal energies, `U0`, of the neutral and cationic species. Ionization energy is calculated as `IP = U0_cation - U0_neutral`.
+### 4 Composite input
+The test jobs `test_002_ionizationenergy_H2O`, `test_004_electronaffinity_Cl`, `test_005_protonaffinity_NH3`, and `test_006_bindingenergy_HFdimer` contain input/output files for composite calculations.
+
+Following is the input for calculating the adiabatic ionization energy of the water molecule from `test_002_ionizationenergy_H2O`. The calculation returns zero-Kelvin internal energies, `U0`, of the neutral and cationic species. Ionization energy is calculated as `IP = U0_cation - U0_neutral`.
 
 ```
 import os
@@ -157,8 +159,6 @@ Water molecule's IP calculated with the `method='g4mp2'` turns out to be `12.590
 
 ## 5 Advanced calculations
 
-The test jobs `test_002_ionizationenergy_H2O`, `test_004_electronaffinity_Cl`, `test_005_protonaffinity_NH3`, and `test_006_bindingenergy_HFdimer` contain input/output files for simple composite calculations. 
- 
 ### 5.1 Frozen geometry calculation
  
 The test job `test_003_enthalpy_H2_frozen_geom` shows how an optimized geometry and harmonic frequencies can be provided externally and a `g4mp2` enthalpy calculation can be performed in a single-point fashion. This requires the keyword `frozengeom` to be set to the value `'true'`, and harmonic frequencies (in cm^-1) are provided using a frequency block named here as `freq` and made as the argument to the keyword `freqcmi`.

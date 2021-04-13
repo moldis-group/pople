@@ -9,6 +9,9 @@ layout: default
 2 [Input/output files](#2.-Input/output-files) 
    > 2.1 [Basic input](#2.1-Basic-input)   
    > 2.2 [Composite input](#2.2-Composite-input)
+
+3 [Advanced calculations](#3.-Advanced-calculations)
+   > 3.1 [Frozen geometry calculation](#3.1-Frozen-geometry-calculation)
  
 ## 1 How to run pople?
 >> See [Installation](https://moldis-group.github.io/pople/installation.html) for installing the code. 

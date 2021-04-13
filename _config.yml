@@ -4,3 +4,5 @@ description: A toolkit for ab initio thermochemistry
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-minimal
+defaults:
+  layout: single

@@ -6,7 +6,7 @@ layout: default
 1 [How to run pople?](#1-How-to-run-pople?)  
    > 1.1 [Parallel calculation](#1.2-Parallel-calculation)  
 
-2 [Input/output files](#2.-Input/output-files) 
+2 [Input/output](#2.-Input/output) 
    > 2.1 [Basic input](#2.1-Basic-input)   
    > 2.2 [Composite input](#2.2-Composite-input)
 
@@ -29,7 +29,7 @@ The number of processors and memory per core (as an option) have to be specified
 ```
 
 
-## 2 Input/output files
+## 2 Input/output
 The code requires one input python script (say, inp.py) and generates three output files.
 * Thermochemistry.out -- Contains a summary of results 
 * ORCA_G4MP2.com -- All the input files entering orca calculations are appended 
@@ -149,3 +149,5 @@ print(' Ionization potential of H2O is ', (U0_cation-U0_neutral)*au2ev, ' eV')
 ```
 
 Water molecule's IP calculated with the `method='g4mp2'` turns out to be `12.5908 eV`, which is in very good agreement with the experimental value `12.619 eV`.
+
+## 3 Advanced calculations

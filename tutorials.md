@@ -13,6 +13,7 @@ layout: default
 3 [Advanced calculations](#3.-Advanced-calculations)
    > 3.1 [Frozen geometry calculation](#3.1-Frozen-geometry-calculation)
    > 3.2 [Atomization energy](#3.2-Atomization-energy)
+   > 3.3 [Enthalpy of formation](#3.3-Enthalpy-of-formation)
  
 ## 1 How to run pople?
 >> See [Installation](https://moldis-group.github.io/pople/installation.html) for installing the code. 
@@ -175,7 +176,7 @@ out = calc(code='orca', code_exe='/Library/Orca420/orca', method='g4mp2', xyz=ge
 
  ### 3.2 Atomization energy
  
- The test jobs `test_007_atomizationenergy_CH4` shows how to calculate atomization energy. Zero-Kelvin internal energy, `U0`, of the molecule and constitutent atoms are calculated, and atomization energy is determined as the reaction energy `Atm. Energy = U0_atoms - U0_molecule`. 
+ The test jobs `test_007_atomizationenergy_CH4` shows how to calculate atomization energy of CH4. Zero-Kelvin internal energy, `U0`, of the molecule and constitutent atoms are calculated, and atomization energy is determined as the reaction energy `Atm. Energy = U0_atoms - U0_molecule`. 
  
  A unique list of the constitutent atoms and their multiplicities are collected using
  ```
@@ -212,3 +213,56 @@ G4MP2-level atomization energy of CH4 can be calculated as
 print( ' Atomization energy of CH4 is ', (U0_atoms_total-U0_mol) * au2kcm, ' kcal/mol')
 ```
 which results in a value of `392.2148` kcal/mol which is in good agreement with the experimental value `397.94` kcal/mol.
+
+ ### 3.3 Enthalpy of formation
+ 
+ The test jobs `test_008_formationenthalpy_CH4` shows how to calculate the standard formation enthalpy of CH4 using previously determined atomization energy.
+ 
+ ```
+ import os
+from pople import au2kcm
+from pople import getatoms, uniqatoms, getmultip
+from pople import HOF_atoms, dH_atoms
+
+#=== CH4 
+geom = '''
+ 0  1
+ C        0.00000000     0.00000000     0.00000000
+ H        1.09336000     0.00000000     0.00000000
+ H       -0.36445000     0.00000000    -1.03083000
+ H       -0.36445000    -0.97188000     0.34361000
+ H       -0.36445000     0.97188000     0.34361000
+'''
+
+#=== from test_007_atomizationenergy_CH4/Thermochemistry.out 
+HTmol = -40.42387018
+U0mol = -40.42768573
+
+#=== from test_007_atomizationenergy_CH4/out
+U0molAE = 392.2148180200836 / au2kcm
+
+
+#=== Atoms
+atoms = getatoms(geom)  # List of atoms
+
+uniq = uniqatoms(atoms) # Unique atom data
+
+N_ua = uniq["N_ua"]       # No. of unique atoms
+ua   = uniq["uniq_sym"]   # unique atoms
+ua_N = uniq["uan"]        # unique atom frequencies
+
+multip=getmultip(ua)    # Multiplicities of unique atoms
+
+
+#=== Enthalpy of formation
+HT_form = HTmol - U0mol - U0molAE
+
+for i_ua in range(N_ua):
+
+   HOF_0K     = HOF_atoms(ua[i_ua])
+   dH_298K_0K = dH_atoms(ua[i_ua])
+
+   HT_form = HT_form + ua_N[i_ua] * ( HOF_0K - dH_298K_0K )
+
+print( ' Standard formation enthalpy (at 298.15 K) of CH4 is ', HT_form * au2kcm, ' kcal/mol')
+ ```

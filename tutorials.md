@@ -144,3 +144,5 @@ from pople import au2ev
 print(' Ionization potential of H2O is ', (U0_cation-U0_neutral)*au2ev, ' eV')
 
 ```
+
+Water molecule's IP calculated with the method `'g4mp2'` comes out to be `12.5908 eV`, which is in very good agreement with the experimental value 12.619 eV.

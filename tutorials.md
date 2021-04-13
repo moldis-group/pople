@@ -70,7 +70,11 @@ os.system("rm -f ORCA.com ORCA.out Thermochemistry.out input.*")
 ```
 
 Every calculation requires four essential input arguments. The input are processed by 'calculator' using arbitray keyword arguments ([\*\*kwargs](https://www.w3schools.com/python/gloss_python_function_arbitrary_keyword_arguments.asp))  
-* 
+
+The geometry block collects the charge, multiplicity and Cartesian coodinates (in Angstroem) of the atom/molecule under consideration. The name of the block (here ```geom``` can be arbitrary. This name has to be made the argument to the keyword ```xyz```.
+
+For performing calculations with orca one must set the ```code``` keyword to ```'orca'```. The path of the orca binary has to provided as the argument to the keyword ```code_exe```. The keyword ```method``` takes as argument the choice of theory, here set to ```g4mp2```.
+
 ```
 geom = '''
 0  1

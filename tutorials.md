@@ -102,7 +102,7 @@ print(' Standard enthalpy (at 298.15 K) is ', H,' hartree')
 ```
 
 ### 2.2 Composite input
-Following is the input for calculating the adiabatic ionization energy of the water molecule. The calculation returns zero-Kelvin internal energies, `U0`, of the neutral and cationic species. Ionization energy is calculated as `$IP = U0_cation-U0_neutral$`.
+Following is the input for calculating the adiabatic ionization energy of the water molecule. The calculation returns zero-Kelvin internal energies, `U0`, of the neutral and cationic species. Ionization energy is calculated as `IP = U0_cation - U0_neutral`.
 
 ```
 import os

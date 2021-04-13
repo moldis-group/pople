@@ -6,7 +6,7 @@ layout: default
 1 [How to run pople?](#1-How-to-run-pople?)  
    > 1.1 [Parallel calculation](#1.2-Parallel-calculation)  
 
-2 [Input/output files](#2-Input/output-files) 
+2 [Files](#2-Files) 
 
 3 [Simple calculation](#3-Simple-calculation)  
 
@@ -34,7 +34,7 @@ The number of processors and memory per core (as an option) have to be specified
 ```
 
 
-## 2 Input/output files
+## 2 Files
 The code requires one input python script (say, inp.py) and generates three output files.
 * Thermochemistry.out -- Contains a summary of results 
 * ORCA_G4MP2.com -- All the input files entering orca calculations are appended 

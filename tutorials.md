@@ -10,7 +10,8 @@ layout: default
  
 ## 1 How to run pople?
 >> See [Installation](https://moldis-group.github.io/pople/installation.html) for installing the code. 
->> The input file is a python script (see examples below) when is executed with python3.
+>> The input file is a python script (see examples below) which may be executed as 
+```python inp.py > out &```
 
 ### 1.1 Parallel calculation
 The number of processors and memory per core (in MB) has to be specified in the input file. In addition, the library variables for a parallel execution have to be set, for example as follows.

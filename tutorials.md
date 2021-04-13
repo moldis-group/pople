@@ -6,7 +6,8 @@ layout: default
 1 [How to run pople?](#1-How-to-run-pople?)  
    > 1.1 [Parallel calculation](#1.2-Parallel-calculation)  
 
-2 [Input/output files](#2.-Input/output-files)      
+2 [Input/output files](#2.-Input/output-files) 
+   > 2.1 [Basic input](#2.1-Basic-input)  
  
 ## 1 How to run pople?
 >> See [Installation](https://moldis-group.github.io/pople/installation.html) for installing the code. 

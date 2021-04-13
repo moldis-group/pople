@@ -6,13 +6,13 @@ layout: default
 1 [How to run pople?](#1-How-to-run-pople?)  
    > 1.1 [Parallel calculation](#1.2-Parallel-calculation)  
 
-2 [Input/output files](#2.-input/output-files) 
+2 [Input/output files](#2-input/output-files) 
 
-3 [Simple calculation](#2.1-Simple-calculation)  
+3 [Simple calculation](#3-Simple-calculation)  
 
-4 [Composite input](#2.2-Composite-input)
+4 [Composite input](#4-Composite-input)
 
-5 [Advanced calculations](#5.-Advanced-calculations)
+5 [Advanced calculations](#5-Advanced-calculations)
    > 5.1 [Frozen geometry calculation](#5.1-Frozen-geometry-calculation)   
    > 5.2 [Atomization energy](#5.2-Atomization-energy)   
    > 5.3 [Enthalpy of formation](#5.3-Enthalpy-of-formation)   

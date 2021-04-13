@@ -7,7 +7,8 @@ layout: default
    > 1.1 [Parallel calculation](#1.2-Parallel-calculation)  
 
 2 [Input/output files](#2.-Input/output-files) 
-   > 2.1 [Basic input](#2.1-Basic-input)  
+   > 2.1 [Basic input](#2.1-Basic-input)
+   > 2.2 [Composite input] (#2.2-Composite-input)
  
 ## 1 How to run pople?
 >> See [Installation](https://moldis-group.github.io/pople/installation.html) for installing the code. 
@@ -99,3 +100,6 @@ H=out[2]
 
 print(' Standard enthalpy (at 298.15 K) is ', H,' hartree')
 ```
+
+### 2.2 Composite input
+Following is the input for calculating the adiabatic ionization energy of the water molecule. The calculation returns zero-Kelvin internal energies, <math>U_0</math>, of the neutral and cationic species. Ionization energy is calculated as <mathIP=U_0^{cation}-U_0^{neutral}</math>.

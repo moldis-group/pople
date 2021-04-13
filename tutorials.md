@@ -57,6 +57,8 @@ H=out[2]
 print(' Standard enthalpy (at 298.15 K) is ', H,' hartree')
 ```
 
+Here is a more detailed explanation of the input.
+
 Every calculation must import the basic function 'calculator' from the pople package.
 ```
 from pople import calculator as calc

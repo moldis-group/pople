@@ -12,6 +12,7 @@ layout: default
 
 3 [Advanced calculations](#3.-Advanced-calculations)
    > 3.1 [Frozen geometry calculation](#3.1-Frozen-geometry-calculation)
+   > 3.2 [Atomization energy](#3.2-Atomization-energy)
  
 ## 1 How to run pople?
 >> See [Installation](https://moldis-group.github.io/pople/installation.html) for installing the code. 
@@ -172,3 +173,36 @@ freq='''
 out = calc(code='orca', code_exe='/Library/Orca420/orca', method='g4mp2', xyz=geom, frozengeom='true', freqcmi=freq)
  ```
 
+ ### 3.2 Atomization energy
+ 
+ The test jobs `test_007_atomizationenergy_CH4` shows how to calculate atomization energy. Zero-Kelvin internal energy, `U0`, of the molecule and constitutent atoms are calculated, and atomization energy is determined as the reaction energy `Atm. Energy = U0_atoms - U0_molecule`. 
+ 
+ A unique list of the constitutent atoms and their multiplicities are collected using
+ ```
+ from pople import getatoms, uniqatoms, getmultip
+
+atoms = getatoms(geom)  # List of atoms
+uniq = uniqatoms(atoms) # Unique atom data
+N_ua = uniq["N_ua"]       # No. of unique atoms
+ua   = uniq["uniq_sym"]   # unique atoms
+ua_N = uniq["uan"]        # unique atom frequencies
+
+multip=getmultip(ua)    # Multiplicities of unique atoms
+ ```
+ 
+ Total energy of all the atoms is calculated using
+ ```
+ U0_atoms_total=0        # Sum of internal energy (at 0 K) of atoms
+for i_ua in range(N_ua):
+
+    print(' Atom ', ua[i_ua], ' with multiplicity ', multip[i_ua])
+
+    #=== calculate for each unique atom
+    geom = (f'''0  {multip[i_ua]} 
+{ua[i_ua]}  0.0 0.0 0.0 ''')
+
+    out = calc(code='orca', code_exe='/Library/Orca420/orca', method='g4mp2', xyz=geom)
+    U0=out[0]
+
+    U0_atoms_total = U0_atoms_total + U0 * ua_N[i_ua]
+ ```

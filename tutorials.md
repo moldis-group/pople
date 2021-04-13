@@ -34,12 +34,12 @@ The code requires one input python script (say, inp.py) and generates three outp
 
 
 ### 2.1 Basic input
-Following is the content of the input script (say 'inp.py') for calculating the standard enthalpy of the H$$_2$$ molecule.
+Following is the content of the input script (say 'inp.py') for calculating the standard enthalpy of the H_2 molecule.
 
 ```
-import os
 from pople import calculator as calc
-from pople import au2ev
+
+import os
 
 #=== Remove old files
 os.system("rm -f ORCA.com ORCA.out Thermochemistry.out input.*")
@@ -56,3 +56,28 @@ H=out[2]
 
 print(' Standard enthalpy (at 298.15 K) is ', H,' hartree')
 ```
+
+Every calculation must import the basic function 'calculator' from the pople package.
+```
+from pople import calculator as calc
+```
+
+If the old output files are removed, new output will be appended to existing files. So, it is recommended to remove previous output files as follows
+```
+import os
+
+os.system("rm -f ORCA.com ORCA.out Thermochemistry.out input.*")
+```
+
+Every calculation requires four essential input arguments. The input are processed by 'calculator' using arbitray keyword arguments ([\*\*kwargs](https://www.w3schools.com/python/gloss_python_function_arbitrary_keyword_arguments.asp))  
+* 
+```
+geom = '''
+0  1
+H  0.0  0.0  0.0
+H  0.0  0.0  0.7
+'''
+
+out = calc(code='orca', code_exe='/Library/Orca420/orca', method='g4mp2', xyz=geom)
+```
+

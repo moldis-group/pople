@@ -6,7 +6,7 @@ layout: default
 1 [How to run pople?](#1-How-to-run-pople?)  
    > 1.1 [Parallel calculation](#1.2-Parallel-calculation)  
 
-2 [Input/output files](#2-input/output-files) 
+2 [Input/output files](#2-Input/output-files) 
 
 3 [Simple calculation](#3-Simple-calculation)  
 

@@ -1,6 +1,7 @@
 ---
 layout: default
 classes: wide
+layout: single
 ---
 
 ## The Code

@@ -190,7 +190,7 @@ ua_N = uniq["uan"]        # unique atom frequencies
 multip=getmultip(ua)    # Multiplicities of unique atoms
  ```
  
- Total energy of all the atoms is calculated using
+ Total internal energy of all the atoms is calculated using
  ```
  U0_atoms_total=0        # Sum of internal energy (at 0 K) of atoms
 for i_ua in range(N_ua):
@@ -206,3 +206,9 @@ for i_ua in range(N_ua):
 
     U0_atoms_total = U0_atoms_total + U0 * ua_N[i_ua]
  ```
+
+G4MP2-level atomization energy of CH4 can be calculated as
+```
+print( ' Atomization energy of CH4 is ', (U0_atoms_total-U0_mol) * au2kcm, ' kcal/mol')
+```
+which results in a value of `392.2148` kcal/mol which is in good agreement with the experimental value `397.94` kcal/mol.

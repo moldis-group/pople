@@ -34,7 +34,7 @@ The code requires one input python script (say, inp.py) and generates three outp
 
 
 ### 2.1 Basic input
-Following is the content of the input script (say 'inp.py') for calculating the standard enthalpy of the H_2 molecule.
+Following is the content of the input script (say 'inp.py') for calculating the standard enthalpy of the H$$_2$$ molecule.
 
 ```
 import os

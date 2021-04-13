@@ -20,7 +20,7 @@ layout: default
 >> See [Installation](https://moldis-group.github.io/pople/installation.html) for installing the code. 
 >> The input file is a python script (see examples below) which may be executed as 
 
-```python inp.py > out &```
+```python3 inp.py > out &```
 
 ### 1.1 Parallel calculation
 The number of processors and memory per core (as an option) have to be specified in the input file. In addition, the library variables for a parallel execution have to be set as follows.
@@ -155,33 +155,32 @@ Water molecule's IP calculated with the `method='g4mp2'` turns out to be `12.590
 
 ## 3 Advanced calculations
 
-The test jobs `test_002_ionizationenergy_H2O`, `test_004_electronaffinity_Cl`, `test_005_protonaffinity_NH3`, and `test_006_bindingenergy_HFdimer`
- contain input/output files for simple composite calculations. 
+The test jobs `test_002_ionizationenergy_H2O`, `test_004_electronaffinity_Cl`, `test_005_protonaffinity_NH3`, and `test_006_bindingenergy_HFdimer` contain input/output files for simple composite calculations. 
  
 ### 3.1 Frozen geometry calculation
  
- The test job `test_003_enthalpy_H2_frozen_geom` shows how an optimized geometry and harmonic frequencies can be provided externally and a `g4mp2` enthalpy calculation can be performed in a single-point fashion. This requires the keyword `frozengeom` to be set to the value `'true'`, and harmonic frequencies (in cm^-1) are provided using a frequency block named here as `freq` and made as the argument to the keyword `freqcmi`.
+The test job `test_003_enthalpy_H2_frozen_geom` shows how an optimized geometry and harmonic frequencies can be provided externally and a `g4mp2` enthalpy calculation can be performed in a single-point fashion. This requires the keyword `frozengeom` to be set to the value `'true'`, and harmonic frequencies (in cm^-1) are provided using a frequency block named here as `freq` and made as the argument to the keyword `freqcmi`.
  
- ```
- geom = '''
+```
+geom = '''
 0  1
- H      0.00000000     0.00000000    -0.02139720
- H      0.00000000     0.00000000     0.72139720
+H      0.00000000     0.00000000    -0.02139720
+H      0.00000000     0.00000000     0.72139720
 '''
 
 freq='''
     4465.2000
 '''
 out = calc(code='orca', code_exe='/Library/Orca420/orca', method='g4mp2', xyz=geom, frozengeom='true', freqcmi=freq)
- ```
+```
 
- ### 3.2 Atomization energy
+### 3.2 Atomization energy
  
- The test jobs `test_007_atomizationenergy_CH4` shows how to calculate atomization energy of CH4. Zero-Kelvin internal energy, `U0`, of the molecule and constitutent atoms are calculated, and atomization energy is determined as the reaction energy `Atm. Energy = U0_atoms - U0_molecule`. 
+The test jobs `test_007_atomizationenergy_CH4` shows how to calculate atomization energy of CH4. Zero-Kelvin internal energy, `U0`, of the molecule and constitutent atoms are calculated, and atomization energy is determined as the reaction energy `Atm. Energy = U0_atoms - U0_molecule`. 
  
- A unique list of the constitutent atoms and their multiplicities are collected using
- ```
- from pople import getatoms, uniqatoms, getmultip
+A unique list of the constitutent atoms and their multiplicities are collected using
+```
+from pople import getatoms, uniqatoms, getmultip
 
 atoms = getatoms(geom)  # List of atoms
 uniq = uniqatoms(atoms) # Unique atom data
@@ -190,11 +189,11 @@ ua   = uniq["uniq_sym"]   # unique atoms
 ua_N = uniq["uan"]        # unique atom frequencies
 
 multip=getmultip(ua)    # Multiplicities of unique atoms
- ```
+```
  
- Total internal energy of all the atoms is calculated using
- ```
- U0_atoms_total=0        # Sum of internal energy (at 0 K) of atoms
+Total internal energy of all the atoms is calculated using
+```
+U0_atoms_total=0        # Sum of internal energy (at 0 K) of atoms
 for i_ua in range(N_ua):
 
     print(' Atom ', ua[i_ua], ' with multiplicity ', multip[i_ua])
@@ -207,7 +206,7 @@ for i_ua in range(N_ua):
     U0=out[0]
 
     U0_atoms_total = U0_atoms_total + U0 * ua_N[i_ua]
- ```
+```
 
 G4MP2-level atomization energy of CH4 can be calculated as
 ```
@@ -217,10 +216,10 @@ which results in a value of `392.2148` kcal/mol which is in good agreement with 
 
 ### 3.3 Enthalpy of formation
  
- The test jobs `test_008_formationenthalpy_CH4` shows how to calculate the standard formation enthalpy of CH4 using previously determined atomization energy.
+The test jobs `test_008_formationenthalpy_CH4` shows how to calculate the standard formation enthalpy of CH4 using previously determined atomization energy.
  
- ```
- import os
+```
+import os
 from pople import au2kcm
 from pople import getatoms, uniqatoms, getmultip
 from pople import HOF_atoms, dH_atoms
@@ -266,7 +265,7 @@ for i_ua in range(N_ua):
    HT_form = HT_form + ua_N[i_ua] * ( HOF_0K - dH_298K_0K )
 
 print( ' Standard formation enthalpy (at 298.15 K) of CH4 is ', HT_form * au2kcm, ' kcal/mol')
- ```
+```
  
 ### 3.4 Multiple calculations
  

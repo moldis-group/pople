@@ -151,3 +151,24 @@ print(' Ionization potential of H2O is ', (U0_cation-U0_neutral)*au2ev, ' eV')
 Water molecule's IP calculated with the `method='g4mp2'` turns out to be `12.5908 eV`, which is in very good agreement with the experimental value `12.619 eV`.
 
 ## 3 Advanced calculations
+
+The test jobs `test_002_ionizationenergy_H2O`, `test_004_electronaffinity_Cl`, `test_005_protonaffinity_NH3`, and `test_006_bindingenergy_HFdimer`
+ contain input/output files for simple composite calculations. 
+ 
+ ### 3.1 Frozen geometry calculation
+ 
+ The test job `test_003_enthalpy_H2_frozen_geom` shows how an optimized geometry and harmonic frequencies can be provided externally and a `g4mp2` enthalpy calculation can be performed in a single-point fashion. This requires the keyword `frozengeom` to be set to the value `'true'`, and harmonic frequencies (in cm^-1) are provided using a frequency block named here as `freq` and made as the argument to the keyword `freqcmi`.
+ 
+ ```
+ geom = '''
+0  1
+ H      0.00000000     0.00000000    -0.02139720
+ H      0.00000000     0.00000000     0.72139720
+'''
+
+freq='''
+    4465.2000
+'''
+out = calc(code='orca', code_exe='/Library/Orca420/orca', method='g4mp2', xyz=geom, frozengeom='true', freqcmi=freq)
+ ```
+

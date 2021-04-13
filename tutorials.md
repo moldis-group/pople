@@ -11,6 +11,7 @@ layout: default
 ## 1 How to run pople?
 >> See [Installation](https://moldis-group.github.io/pople/installation.html) for installing the code. 
 >> The input file is a python script (see examples below) which may be executed as 
+
 ```python inp.py > out &```
 
 ### 1.1 Parallel calculation

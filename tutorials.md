@@ -4,8 +4,7 @@ layout: default
 
 # Content:
 1 [How to run pople?](#1-How-to-run-pople?)  
-   > 1.1 [Interactive mode](#1.1-Interactive-mode)  
-   > 1.2 [Batch mode](#1.2-Batch-mode)  
+   > 1.1 [Parallel calculation](#1.2-Parallel-calculation)  
 
 2 [Sample input/output files](#2.-Example-input/output-files)  
    > 2.1 [Heat of formation of H2O](#2.1-Heat-of-formation-of-H2O)    
@@ -17,18 +16,16 @@ layout: default
  
 ## 1 How to run pople?
 >> See [Installation](https://moldis-group.github.io/pople/installation.html) for installing the code. 
->> Ensure that an input file (pople.inp) is present in the working directory (see examples below) a calculation can be 
-performed either interactively on a python terminal or one can use a script.
+>> The input file is a python script (see examples below) when is executed with python3.
 
-### 1.1 Interactive mode
-Interactive mode is typically recommded for small systems. Prepare pople.inp in the workding direct, open a python3 terminal and type the following lines
-```
-import pople
-value=pople.run()
-```
+### 1.1 Parallel calculation
+The number of processors and memory per core (in MB) has to be specified in the input file. In addition, the library variables for a parallel execution have to be set, for example as follows.
 
-### 1.2 Batch mode
-All the python commands can be included in a script, say run.py and the commands can be executed as python3 run.py
+  export OMP_NUM_THREADS=1
+  export PATH=/apps/openmpi-3.0.0_install/bin:$PATH
+  export LD_LIBRARY_PATH=/apps/openmpi-3.0.0_install/lib:$LD_LIBRARY_PATH
+
+
 
 ## 2 Sample input/output files
 The code pople generates three output files. 

@@ -6,15 +6,17 @@ layout: default
 1 [How to run pople?](#1-How-to-run-pople?)  
    > 1.1 [Parallel calculation](#1.2-Parallel-calculation)  
 
-2 [Input/output](#2.-Input/output) 
-   > 2.1 [Basic input](#2.1-Basic-input)   
-   > 2.2 [Composite input](#2.2-Composite-input)
+2 [Input/output files](#2.-Input/output files) 
 
-3 [Advanced calculations](#3.-Advanced-calculations)
-   > 3.1 [Frozen geometry calculation](#3.1-Frozen-geometry-calculation)   
-   > 3.2 [Atomization energy](#3.2-Atomization-energy)   
-   > 3.3 [Enthalpy of formation](#3.3-Enthalpy-of-formation)   
-   > 3.4 [Multiple calculations](#3.4-Multiple-calculations)  
+3 [Simple calculation](#2.1-Simple-calculation)  
+
+4 [Composite input](#2.2-Composite-input)
+
+5 [Advanced calculations](#5.-Advanced-calculations)
+   > 5.1 [Frozen geometry calculation](#5.1-Frozen-geometry-calculation)   
+   > 5.2 [Atomization energy](#5.2-Atomization-energy)   
+   > 5.3 [Enthalpy of formation](#5.3-Enthalpy-of-formation)   
+   > 5.4 [Multiple calculations](#5.4-Multiple-calculations)  
  
 ## 1 How to run pople?
 >> See [Installation](https://moldis-group.github.io/pople/installation.html) for installing the code. 
@@ -32,7 +34,7 @@ The number of processors and memory per core (as an option) have to be specified
 ```
 
 
-## 2 Input/output
+## 2 Input/output files
 The code requires one input python script (say, inp.py) and generates three output files.
 * Thermochemistry.out -- Contains a summary of results 
 * ORCA_G4MP2.com -- All the input files entering orca calculations are appended 
@@ -41,7 +43,7 @@ The code requires one input python script (say, inp.py) and generates three outp
 >> NOTE: During multiple executions the outputs are appended.
 
 
-### 2.1 Basic input
+## 3 Simple calculation
 Following is the content of the input script (say 'inp.py') for calculating the standard enthalpy of the H_2 molecule.
 
 ```
@@ -153,11 +155,11 @@ print(' Ionization potential of H2O is ', (U0_cation-U0_neutral)*au2ev, ' eV')
 
 Water molecule's IP calculated with the `method='g4mp2'` turns out to be `12.5908 eV`, which is in very good agreement with the experimental value `12.619 eV`.
 
-## 3 Advanced calculations
+## 5 Advanced calculations
 
 The test jobs `test_002_ionizationenergy_H2O`, `test_004_electronaffinity_Cl`, `test_005_protonaffinity_NH3`, and `test_006_bindingenergy_HFdimer` contain input/output files for simple composite calculations. 
  
-### 3.1 Frozen geometry calculation
+### 5.1 Frozen geometry calculation
  
 The test job `test_003_enthalpy_H2_frozen_geom` shows how an optimized geometry and harmonic frequencies can be provided externally and a `g4mp2` enthalpy calculation can be performed in a single-point fashion. This requires the keyword `frozengeom` to be set to the value `'true'`, and harmonic frequencies (in cm^-1) are provided using a frequency block named here as `freq` and made as the argument to the keyword `freqcmi`.
  
@@ -174,7 +176,7 @@ freq='''
 out = calc(code='orca', code_exe='/Library/Orca420/orca', method='g4mp2', xyz=geom, frozengeom='true', freqcmi=freq)
 ```
 
-### 3.2 Atomization energy
+### 5.2 Atomization energy
  
 The test jobs `test_007_atomizationenergy_CH4` shows how to calculate atomization energy of CH4. Zero-Kelvin internal energy, `U0`, of the molecule and constitutent atoms are calculated, and atomization energy is determined as the reaction energy `Atm. Energy = U0_atoms - U0_molecule`. 
  
@@ -214,7 +216,7 @@ print( ' Atomization energy of CH4 is ', (U0_atoms_total-U0_mol) * au2kcm, ' kca
 ```
 which results in a value of `392.2148` kcal/mol which is in good agreement with the experimental value `397.94` kcal/mol.
 
-### 3.3 Enthalpy of formation
+### 5.3 Enthalpy of formation
  
 The test jobs `test_008_formationenthalpy_CH4` shows how to calculate the standard formation enthalpy of CH4 using previously determined atomization energy.
  
@@ -267,7 +269,7 @@ for i_ua in range(N_ua):
 print( ' Standard formation enthalpy (at 298.15 K) of CH4 is ', HT_form * au2kcm, ' kcal/mol')
 ```
  
-### 3.4 Multiple calculations
+### 5.4 Multiple calculations
  
 The test job `test_009_methods_comparison_CH4` shows how to perform calculations with two methods using a for loop, compare the results in a table. 
  

@@ -13,9 +13,9 @@ The Pople project follows the computational chemistry software design principles
 The input file is a programmable python script. This facilitates the user to design inputs to perform composite tasks. The tutorials provide example input/output files for the following job types.
 1. Enthalpy of formation
 2. Atomization energy 
-3. Ionization Potential
-4. Electron Affinity 
-5. Proton Affinity
+3. Ionization potential
+4. Electron affinity 
+5. Proton affinity
 6. Intermolecular Binding Energy
 
 Calculations can also be performed in a _single point_ fashion with a user provided initial geometry and harmonic frequencies. Further, empirical parameters such as reference standard enthalpies of atoms and higher-level correction (HLC) constants can be modified.

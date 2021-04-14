@@ -3,13 +3,13 @@ layout: default
 ---
 
 # Content:
-1 [Basic input options](#1-basic-input-options)  
-
-2 [Advanced input options](#2-advanced-input-options)
+1 [Basic input](#1-basic-input)  
+2 [Optional input](#3-optional-input)
+3 [Advanced input](#3-advanced-input)
 
    
 
-## 1 Basic input options
+## 1 Basic input
 
 Every calculation requires four essential input arguments for the input keywords  `code`, `code_exe`, `method`, and `xyz`. 
 
@@ -70,12 +70,27 @@ Keyword: `xyz`
 >xyz=geom
 >```
 
-    if 'xyz' in kwargs:
-        geom=kwargs['xyz']
-    if 'nproc' in kwargs:
-        nproc=kwargs['nproc']
-    if 'mem_mb' in kwargs:
-        mem_mb=kwargs['mem_mb']
+## 2 Optional input
+
+Keyword: `nproc`   
+>Argument (integer): Number of cpu-cores for a parallel calculation
+>Default: 1
+>Usage: 
+>```
+>`nproc=4` 
+>```
+
+Keyword: `mem_mb`   
+>Argument (integer): RAM memory per core in megabytes
+>Default: 1000
+>Usage: 
+>```
+>`mem_mb=4000` 
+>```
+
+## 3 Advanced input
+>> Coming soon.
+>> 
         
     if 'frozengeom' in kwargs:
         frozengeom=kwargs['frozengeom']
@@ -84,8 +99,4 @@ Keyword: `xyz`
         if 'freqcmi' in kwargs:
             freq=kwargs['freqcmi']
 
-RAM memory per core in megabytes, 1024 stands for 1 GB. The value has to be an integer.
 
-
-## 2 Advanced input options
->> Coming soon.

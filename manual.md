@@ -100,6 +100,7 @@ Keyword: `frozengeom`
 >```   
 >frozengeom='true'    
 >```    
+If set to `'true'`, the keyword `'freqcmi'` [next keyword below] has to be provided to 'calculator' 
 See the test job `test_003_enthalpy_H2_frozen_geom`
     
 Keyword: `freqcmi`      

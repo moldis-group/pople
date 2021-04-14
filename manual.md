@@ -16,36 +16,54 @@ Every calculation requires four essential input arguments for the input keywords
 These inputs are processed by the 'calculator' function of the pople code as arbitray keyword arguments (\*\*kwargs)[https://www.w3schools.com/python/gloss_python_function_arbitrary_keyword_arguments.asp].
 
 
- Keyword: `code`   
-  >Argument:  presently, `orca` is the only allowed argument  
-  >Usage: 
-  >```
-  >code='orca'
-  >```   
+Keyword: `code`   
+>Argument (string): presently, `'orca'` is the only allowed argument  
+>Usage: 
+>```
+>code='orca'
+>```   
  
- Keyword: `code_exe`   
- Argument:  Absolute path of the executable binary of the code 
- Usage-1: `code_exe='/home/Lib/ORCA_420/orca'` 
- Usage-2:   
- ```
- exe='/home/Lib/ORCA_420/orca'
- code_exe=exe
- ```
+Keyword: `code_exe`   
+>Argument (string): Absolute path of the executable binary of the code 
+>Usage-1: 
+>```
+>code_exe='/home/Lib/ORCA_420/orca'
+>```
+> 
+>Usage-2:   
+>```
+>exe='/home/Lib/ORCA_420/orca'
+>code_exe=exe
+>```
     
+Keyword: `method`   
+>Argument (string): Pople (version-21.04.0) supports `'g4mp2'` and `'g4mp2-xp'` calculations
+>Usage: 
+>```
+>`method='g4mp2-xp'` 
+>```
     
-For other possible keywords (and their arguments) that can be provided to 'calculator', 
-    if 'code' in kwargs:
-        code=kwargs['code']
-    if 'code_exe' in kwargs:
-        code_exe=kwargs['code_exe']
-    if 'method' in kwargs:
-        method=kwargs['method']
+Keyword: `xyz`   
+>Argument (string): Name of the geometry block
+>Usage: 
+>```
+>geom=\`\`\`
+>0   1
+>O      0.0         0.0      0.0
+>H      0.96854     0.0      0.0
+>H     -0.22812     0.0     -0.94129
+>\`\`\`
+>
+>xyz=geom
+>```
+
     if 'xyz' in kwargs:
         geom=kwargs['xyz']
     if 'nproc' in kwargs:
         nproc=kwargs['nproc']
     if 'mem_mb' in kwargs:
         mem_mb=kwargs['mem_mb']
+        
     if 'frozengeom' in kwargs:
         frozengeom=kwargs['frozengeom']
 

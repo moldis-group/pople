@@ -3,8 +3,8 @@ layout: default
 ---
 
 # Content:
-1 [Running the code](#1-Running-the-code)  
-   > 1.1 [Parallel calculation](#1.2-Parallel-calculation)  
+1 [Running the code](#1-running-the-code)  
+   > 1.1 [Parallel calculation](#1.2-parallel-calculation)  
 
 2 [Files](#2-Files) 
 

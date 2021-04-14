@@ -6,17 +6,17 @@ layout: default
 1 [Running the code](#1-running-the-code)  
    > 1.1 [Parallel calculation](#1.2-parallel-calculation)  
 
-2 [Files](#2-Files) 
+2 [Files](#2-files) 
 
-3 [Simple calculation](#3-Simple-calculation)  
+3 [Simple calculation](#3-simple-calculation)  
 
-4 [Composite input](#4-Composite-input)
+4 [Composite input](#4-composite-input)
 
-5 [Advanced calculations](#5-Advanced-calculations)
-   > 5.1 [Frozen geometry calculation](#5.1-Frozen-geometry-calculation)   
-   > 5.2 [Atomization energy](#5.2-Atomization-energy)   
-   > 5.3 [Enthalpy of formation](#5.3-Enthalpy-of-formation)   
-   > 5.4 [Multiple calculations](#5.4-Multiple-calculations)  
+5 [Advanced calculations](#5-advanced-calculations)
+   > 5.1 [Frozen geometry calculation](#5.1-frozen-geometry-calculation)   
+   > 5.2 [Atomization energy](#5.2-atomization-energy)   
+   > 5.3 [Enthalpy of formation](#5.3-enthalpy-of-formation)   
+   > 5.4 [Multiple calculations](#5.4-multiple-calculations)  
  
 ## 1 Running the code
 >> See [Installation](https://moldis-group.github.io/pople/installation.html) for installing the code. 

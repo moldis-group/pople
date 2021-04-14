@@ -4,8 +4,8 @@ layout: default
 
 # Content:
 1 [Basic input](#1-basic-input)  
-2 [Optional input](#3-optional-input)
-3 [Advanced input](#3-advanced-input)
+2 [Optional input](#3-optional-input)  
+3 [Advanced input](#3-advanced-input)  
 
    
 
@@ -30,63 +30,63 @@ See also example-1 from [Tutorials](https://moldis-group.github.io/pople/tutoria
 
 
 Keyword: `code`   
->Argument (string): presently, `'orca'` is the only allowed argument  
+>Argument (string): presently, `'orca'` is the only allowed argument   
 >Usage: 
->```
->code='orca'
->```   
+>```  
+>code='orca'  
+>```     
  
-Keyword: `code_exe`   
+Keyword: `code_exe`    
 >Argument (string): Absolute path of the executable binary of the code 
->Usage-1: 
->```
->code_exe='/home/Lib/ORCA_420/orca'
->```
+>Usage-1:    
+>```   
+>code_exe='/home/Lib/ORCA_420/orca'   
+>```   
 > 
->Usage-2:   
->```
->exe='/home/Lib/ORCA_420/orca'
->code_exe=exe
->```
-    
-Keyword: `method`   
->Argument (string): Pople (version-21.04.0) supports `'g4mp2'` and `'g4mp2-xp'` calculations
->Usage: 
->```
->`method='g4mp2-xp'` 
+>Usage-2:    
+>```   
+>exe='/home/Lib/ORCA_420/orca'   
+>code_exe=exe   
 >```
     
-Keyword: `xyz`   
->Argument (string): Name of the geometry block
->Usage: 
->```
->geom='''
->0   1
->O      0.0         0.0      0.0
->H      0.96854     0.0      0.0
->H     -0.22812     0.0     -0.94129
->'''
->
->xyz=geom
->```
+Keyword: `method`    
+>Argument (string): Pople (version-21.04.0) supports `'g4mp2'` and `'g4mp2-xp'` calculations   
+>Usage:    
+>```   
+>`method='g4mp2-xp'`    
+>```   
+    
+Keyword: `xyz`      
+>Argument (string): Name of the geometry block   
+>Usage:    
+>```   
+>geom='''  
+>0   1   
+>O      0.0         0.0      0.0   
+>H      0.96854     0.0      0.0   
+>H     -0.22812     0.0     -0.94129   
+>'''   
+>   
+>xyz=geom   
+>```    
 
 ## 2 Optional input
 
-Keyword: `nproc`   
->Argument (integer): Number of cpu-cores for a parallel calculation
->Default: 1
->Usage: 
->```
->`nproc=4` 
+Keyword: `nproc`      
+>Argument (integer): Number of cpu-cores for a parallel calculation    
+>Default: 1    
+>Usage:    
+>```   
+>`nproc=4`    
 >```
 
-Keyword: `mem_mb`   
->Argument (integer): RAM memory per core in megabytes
->Default: 1000
->Usage: 
->```
->`mem_mb=4000` 
->```
+Keyword: `mem_mb`     
+>Argument (integer): RAM memory per core in megabytes   
+>Default: 1000   
+>Usage:   
+>```    
+>`mem_mb=4000`   
+>```   
 
 ## 3 Advanced input
 >> Coming soon.

@@ -107,12 +107,12 @@ Keyword: `freqcmi`
 >Argument (string): Name of the frequency block  containing harmonic wavenumbers in cm^-1 
 >Usage:    
 >```   
->
 >freq='''     
 >1671.78  
 >3808.42   
 >3912.50   
 >'''   
+>   
 >freqcmi=freq   
 >```  
 See the test job `test_003_enthalpy_H2_frozen_geom`

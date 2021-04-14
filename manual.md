@@ -57,7 +57,7 @@ Keyword: `method`
 >```   
     
 Keyword: `xyz`      
->Argument (string): Name of the geometry block   
+>Argument (string): Name of the geometry block. The geometry block collects the charge, multiplicity and Cartesian coodinates (in Angstroem) of the atom/molecule under consideration.      
 >Usage:    
 >```   
 >geom='''  

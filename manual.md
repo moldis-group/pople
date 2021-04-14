@@ -78,7 +78,14 @@ Keyword: `nproc`
 >Usage:    
 >```   
 >`nproc=4`    
->```
+>```   
+Usage of this keyword assumes that the library variables are set properly. For example, these may be set on the terminal (or in a job script) as follows
+```
+export OMP_NUM_THREADS=1
+export PATH=/apps/openmpi-3.0.0_install/bin:$PATH
+export LD_LIBRARY_PATH=/apps/openmpi-3.0.0_install/lib:$LD_LIBRARY_PATH
+```
+
 
 Keyword: `mem_mb`     
 >Argument (integer): RAM memory per core in megabytes   

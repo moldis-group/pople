@@ -37,7 +37,7 @@ Keyword: `code`
 >```     
  
 Keyword: `code_exe`    
->Argument (string): Absolute path of the executable binary of the code 
+>Argument (string): Absolute path of the executable binary of the code    
 >Usage-1:    
 >```   
 >code_exe='/home/Lib/ORCA_420/orca'   

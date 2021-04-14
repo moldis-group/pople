@@ -47,12 +47,12 @@ Keyword: `xyz`
 >Argument (string): Name of the geometry block
 >Usage: 
 >```
->geom=\`\`\`
+>geom=```
 >0   1
 >O      0.0         0.0      0.0
 >H      0.96854     0.0      0.0
 >H     -0.22812     0.0     -0.94129
->\`\`\`
+>```
 >
 >xyz=geom
 >```

@@ -86,7 +86,6 @@ export PATH=/apps/openmpi-3.0.0_install/bin:$PATH
 export LD_LIBRARY_PATH=/apps/openmpi-3.0.0_install/lib:$LD_LIBRARY_PATH
 ```
 
-
 Keyword: `mem_mb`     
 >Argument (integer): RAM memory per core in megabytes   
 >Default: 1000   
@@ -95,12 +94,31 @@ Keyword: `mem_mb`
 >`mem_mb=4000`   
 >```   
 
+Keyword: `frozengeom`    
+>Argument (string): `'true'` for a frozen-geometry calculation.   
+>Usage:    
+>```   
+>`frozengeom='true'`    
+>```    
+See the test job `test_003_enthalpy_H2_frozen_geom`
+    
+Keyword: `freqcmi`      
+>Argument (string): Name of the frequency block  containing harmonic wavenumbers in cm^-1 
+>Usage:    
+>```   
+>freq='''     
+>1671.78  
+>3808.42   
+>3912.50   
+>'''   
+>freqcmi=freq   
+>```  
+See the test job `test_003_enthalpy_H2_frozen_geom`
+
 ## 3 Advanced input
 >> Coming soon.
 >> 
         
-    if 'frozengeom' in kwargs:
-        frozengeom=kwargs['frozengeom']
 
     if frozengeom == 'true':
         if 'freqcmi' in kwargs:

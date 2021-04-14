@@ -77,7 +77,7 @@ Keyword: `nproc`
 >Default: 1    
 >Usage:    
 >```   
->`nproc=4`    
+>nproc=4    
 >```   
 Usage of this keyword assumes that the library variables are set properly. For example, these may be set on the terminal (or in a job script) as follows
 ```
@@ -91,14 +91,14 @@ Keyword: `mem_mb`
 >Default: 1000   
 >Usage:   
 >```    
->`mem_mb=4000`   
+>mem_mb=4000   
 >```   
 
 Keyword: `frozengeom`    
 >Argument (string): `'true'` for a frozen-geometry calculation.   
 >Usage:    
 >```   
->`frozengeom='true'`    
+>frozengeom='true'    
 >```    
 See the test job `test_003_enthalpy_H2_frozen_geom`
     
@@ -116,12 +116,7 @@ Keyword: `freqcmi`
 See the test job `test_003_enthalpy_H2_frozen_geom`
 
 ## 3 Advanced input
->> Coming soon.
->> 
-        
+Coming soon
 
-    if frozengeom == 'true':
-        if 'freqcmi' in kwargs:
-            freq=kwargs['freqcmi']
 
 

@@ -107,6 +107,7 @@ Keyword: `freqcmi`
 >Argument (string): Name of the frequency block  containing harmonic wavenumbers in cm^-1 
 >Usage:    
 >```   
+>
 >freq='''     
 >1671.78  
 >3808.42   

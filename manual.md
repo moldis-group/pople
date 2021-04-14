@@ -16,9 +16,9 @@ Every calculation requires four essential input arguments for the input keywords
 These inputs are processed by the 'calculator' function of the pople code as arbitray keyword arguments (\*\*kwargs)[https://www.w3schools.com/python/gloss_python_function_arbitrary_keyword_arguments.asp].
 
 
- Keyword: `code`
- Argument:  presently, `orca` is the only allowed argument
- Usage: `code='pople'`
+ Keyword: `code`   
+ Argument:  presently, `orca` is the only allowed argument   
+ Usage: `code='pople'`   
 
     
     

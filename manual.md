@@ -15,6 +15,19 @@ Every calculation requires four essential input arguments for the input keywords
 
 These inputs are processed by the 'calculator' function of the pople code as arbitray keyword arguments (\*\*kwargs)[https://www.w3schools.com/python/gloss_python_function_arbitrary_keyword_arguments.asp].
 
+These keywords and their arguments are provided to the 'calculator' function as 
+```
+pople.calculator(key1=arg1, key2=arg2, key3=arg3, key4=arg4)
+```
+
+Here is a specific example
+```
+from pople import calculator as calc
+out = calc(code='orca', code_exe='/home/Lib/ORCA_420/orca', method='g4mp2', xyz=geom)
+```
+
+See also example-1 from [Tutorials](https://moldis-group.github.io/pople/tutorials.html#3-simple-calculation)
+
 
 Keyword: `code`   
 >Argument (string): presently, `'orca'` is the only allowed argument  
@@ -47,12 +60,12 @@ Keyword: `xyz`
 >Argument (string): Name of the geometry block
 >Usage: 
 >```
->geom=```
+>geom='''
 >0   1
 >O      0.0         0.0      0.0
 >H      0.96854     0.0      0.0
 >H     -0.22812     0.0     -0.94129
->\```
+>'''
 >
 >xyz=geom
 >```

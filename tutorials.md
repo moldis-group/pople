@@ -122,6 +122,9 @@ from pople import au2ev
 #=== Remove old files
 os.system("rm -f ORCA.com ORCA.out Thermochemistry.out input.*")
 
+#=== Common inputs
+exe='/home/Lib/ORCA_420/orca'
+
 #=== neutral H2O
 geom = '''
 0  1
@@ -130,7 +133,7 @@ H      0.96854     0.0      0.0
 H     -0.22812     0.0     -0.94129
 '''
 
-out = calc(code='orca', code_exe='/Library/Orca420/orca', method='g4mp2', xyz=geom)
+out = calc(code='orca', code_exe=exe, method='g4mp2', xyz=geom)
 U0_neutral=out[0]
 
 #=== cation H2O
@@ -141,7 +144,7 @@ H      1.01249     0.0      0.0
 H     -0.34159     0.0     -0.95313
 '''
 
-out = calc(code='orca', code_exe='/Library/Orca420/orca', method='g4mp2', xyz=geom)
+out = calc(code='orca', code_exe=exe, method='g4mp2', xyz=geom)
 U0_cation=out[0]
 
 print(' Ionization potential of H2O is ', (U0_cation-U0_neutral)*au2ev, ' eV')
@@ -175,7 +178,7 @@ freq='''
 '''
 
 program='orca'
-exe='/Library/Orca420/orca'
+exe='/home/Lib/ORCA_420/orca'
 
 out = calc(code=program, code_exe=exe, method='g4mp2', xyz=geom, frozengeom='true', freqcmi=freq)
 ```
@@ -199,6 +202,7 @@ multip=getmultip(ua)    # Multiplicities of unique atoms
  
 Total internal energy of all the atoms is calculated using
 ```
+exe='/home/Lib/ORCA_420/orca'
 U0_atoms_total=0        # Sum of internal energy (at 0 K) of atoms
 for i_ua in range(N_ua):
 
@@ -208,7 +212,7 @@ for i_ua in range(N_ua):
     geom = (f'''0  {multip[i_ua]} 
 {ua[i_ua]}  0.0 0.0 0.0 ''')
 
-    out = calc(code='orca', code_exe='/Library/Orca420/orca', method='g4mp2', xyz=geom)
+    out = calc(code='orca', code_exe=exe, method='g4mp2', xyz=geom)
     U0=out[0]
 
     U0_atoms_total = U0_atoms_total + U0 * ua_N[i_ua]

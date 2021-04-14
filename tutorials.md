@@ -28,9 +28,9 @@ layout: default
 The number of processors and memory per core (as an option) have to be specified in the input file. In addition, the library variables for a parallel execution have to be set as follows.
 
 ```
-  export OMP_NUM_THREADS=1
-  export PATH=/apps/openmpi-3.0.0_install/bin:$PATH
-  export LD_LIBRARY_PATH=/apps/openmpi-3.0.0_install/lib:$LD_LIBRARY_PATH
+export OMP_NUM_THREADS=1
+export PATH=/apps/openmpi-3.0.0_install/bin:$PATH
+export LD_LIBRARY_PATH=/apps/openmpi-3.0.0_install/lib:$LD_LIBRARY_PATH
 ```
 
 
@@ -173,7 +173,11 @@ H      0.00000000     0.00000000     0.72139720
 freq='''
     4465.2000
 '''
-out = calc(code='orca', code_exe='/Library/Orca420/orca', method='g4mp2', xyz=geom, frozengeom='true', freqcmi=freq)
+
+program='orca'
+exe='/Library/Orca420/orca'
+
+out = calc(code=program, code_exe=exe, method='g4mp2', xyz=geom, frozengeom='true', freqcmi=freq)
 ```
 
 ### 5.2 Atomization energy

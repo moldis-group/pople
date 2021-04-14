@@ -39,7 +39,7 @@ Keyword: `code_exe`
 Keyword: `method`   
 >Argument (string): Pople (version-21.04.0) supports `'g4mp2'` and `'g4mp2-xp'` calculations
 >Usage: 
->\```
+>\`\`\`
 >`method='g4mp2-xp'` 
 >```
     

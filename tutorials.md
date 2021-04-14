@@ -3,7 +3,7 @@ layout: default
 ---
 
 # Content:
-1 [How to run pople?](#1-How-to-run-pople?)  
+1 [Running the code](#1-Running-the-code)  
    > 1.1 [Parallel calculation](#1.2-Parallel-calculation)  
 
 2 [Files](#2-Files) 
@@ -18,7 +18,7 @@ layout: default
    > 5.3 [Enthalpy of formation](#5.3-Enthalpy-of-formation)   
    > 5.4 [Multiple calculations](#5.4-Multiple-calculations)  
  
-## 1 How to run pople?
+## 1 Running the code
 >> See [Installation](https://moldis-group.github.io/pople/installation.html) for installing the code. 
 >> The input file is a python script (see examples below) which may be executed as 
 

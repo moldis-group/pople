@@ -59,8 +59,8 @@ geom = '''
 H  0.0  0.0  0.0
 H  0.0  0.0  0.7
 '''
-
-out = calc(code='orca', code_exe='/Library/Orca420/orca', method='g4mp2', xyz=geom)
+exe='/home/Lib/ORCA_420/orca'
+out = calc(code='orca', code_exe=exe, method='g4mp2', xyz=geom)
 
 H=out[2]
 
@@ -97,8 +97,8 @@ geom = '''
 H  0.0  0.0  0.0
 H  0.0  0.0  0.7
 '''
-
-out = calc(code='orca', code_exe='/Library/Orca420/orca', method='g4mp2', xyz=geom)
+exe='/home/Lib/ORCA_420/orca'
+out = calc(code='orca', code_exe=exe, method='g4mp2', xyz=geom)
 ```
 
 The function 'calculator' returns the output as a list, which is assigned to the variable ```out```. The first three elements of ```out``` are internal energy at 0 Kelvin, internal energy at T (set to 298.5) Kelvin, and enthalpy at 298.15 K.

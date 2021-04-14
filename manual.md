@@ -17,20 +17,15 @@ These inputs are processed by the 'calculator' function of the pople code as arb
 
 
  Keyword: `code`   
- 
- Argument:  presently, `orca` is the only allowed argument  
- 
- Usage: 
- ```
- code='pople'
- ```   
+  >Argument:  presently, `orca` is the only allowed argument  
+  >Usage: 
+  >```
+  >code='orca'
+  >```   
  
  Keyword: `code_exe`   
- 
  Argument:  Absolute path of the executable binary of the code 
- 
  Usage-1: `code_exe='/home/Lib/ORCA_420/orca'` 
- 
  Usage-2:   
  ```
  exe='/home/Lib/ORCA_420/orca'

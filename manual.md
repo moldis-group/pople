@@ -4,7 +4,7 @@ layout: default
 
 # Content:
 1 [Basic input](#1-basic-input)  
-2 [Optional input](#3-optional-input)  
+2 [Optional input](#2-optional-input)  
 3 [Advanced input](#3-advanced-input)  
 
    

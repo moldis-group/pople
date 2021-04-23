@@ -13,7 +13,7 @@ layout: default
 
 Every calculation requires four essential input arguments for the input keywords  `code`, `code_exe`, `method`, and `xyz`. 
 
-These inputs are processed by the 'calculator' function of the pople code as arbitray keyword arguments (\*\*kwargs)[https://www.w3schools.com/python/gloss_python_function_arbitrary_keyword_arguments.asp].
+These inputs are processed by the 'calculator' function of the pople code as arbitray keyword arguments ([\*\*kwargs](https://www.w3schools.com/python/gloss_python_function_arbitrary_keyword_arguments.asp)) .
 
 These keywords and their arguments are provided to the 'calculator' function as 
 ```

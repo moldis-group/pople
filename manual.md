@@ -70,6 +70,8 @@ Keyword: `xyz`
 >xyz=geom   
 >```    
 
+* * *
+
 ## 2 Optional input
 
 Keyword: `nproc`      
@@ -117,8 +119,10 @@ Keyword: `freqcmi`
 >```  
 See the test job `test_003_enthalpy_H2_frozen_geom`
 
+* * *
+
 ## 3 Advanced input
 Coming soon
 
-
+* * *
 

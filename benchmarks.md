@@ -15,7 +15,7 @@ The python code contains G4(MP2)-XP level geometry, harmonic frequencies, energi
 
 [C60_enthalpy.py](https://github.com/moldis-group/pople/blob/main/benchmarks/C60_enthalpy.py)
 
-After installing the pople code, running the above script returns the following output
+After installing the pople code, running the above `C60_enthalpy.py` with python returns the following output
 
 ```
 Atomization energy is              15.2943 hartree    

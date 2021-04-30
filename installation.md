@@ -15,5 +15,7 @@ The source code is available for download at [https://github.com/moldis-group/po
 orca 4.2.0 and above
 python 3.7 and above
 numpy
-pandas --- for running the [benchmark suites](https://moldis-group.github.io/pople/benchmarks.html)
 ```
+
+`pandas` is needed for running the [benchmark suites](https://moldis-group.github.io/pople/benchmarks.html)
+

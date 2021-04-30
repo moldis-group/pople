@@ -16,8 +16,4 @@ Calculations can also be performed in a _single point_ fashion with a user provi
  
 * * *
 
-## Upcoming features
-1. ccCA calculations
-2. Entropy and Free Energy calculations
- 
-* * *
+

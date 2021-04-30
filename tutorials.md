@@ -33,6 +33,7 @@ export PATH=/apps/openmpi-3.0.0_install/bin:$PATH
 export LD_LIBRARY_PATH=/apps/openmpi-3.0.0_install/lib:$LD_LIBRARY_PATH
 ```
 
+* * *
 
 ## 2 Files
 The code requires one input python script (say, inp.py) and generates three output files.
@@ -42,6 +43,7 @@ The code requires one input python script (say, inp.py) and generates three outp
 
 >> NOTE: During multiple executions the outputs are appended.
 
+* * *
 
 ## 3 Simple calculation
 Following is the content of the input script (say 'inp.py') for calculating the standard enthalpy of the H_2 molecule.
@@ -109,6 +111,8 @@ H=out[2]
 print(' Standard enthalpy (at 298.15 K) is ', H,' hartree')
 ```
 
+* * *
+
 ### 4 Composite input
 The test jobs `test_002_ionizationenergy_H2O`, `test_004_electronaffinity_Cl`, `test_005_protonaffinity_NH3`, and `test_006_bindingenergy_HFdimer` contain input/output files for composite calculations.
 
@@ -159,6 +163,8 @@ print(' Ionization potential of H2O is ', (U0_cation-U0_neutral)*au2ev, ' eV')
 ```
 
 Water molecule's IP calculated with the `method='g4mp2'` turns out to be `12.5908 eV`, which is in very good agreement with the experimental value `12.619 eV`.
+
+* * *
 
 ## 5 Advanced calculations
 
@@ -301,3 +307,5 @@ g4mp2                          1306.6164             18.8675              1264.3
 g4mp2-xp                       1305.8573             19.6262               796.0674
 Exp.                                                 19.70
 ```
+
+* * *

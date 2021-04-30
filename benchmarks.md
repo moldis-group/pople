@@ -18,11 +18,11 @@ The python code contains G4(MP2)-XP level geometry, harmonic frequencies, energi
 After installing the pople code, running the above script returns the following output
 
 `
- Atomization energy is              15.2943 hartree
- Atomization energy is            9597.3248 kcal/mol
+  Atomization energy is              15.2943 hartree
+  Atomization energy is            9597.3248 kcal/mol
 
 
- ZPVE is                           230.0659 kcal/mol
+  ZPVE is                           230.0659 kcal/mol
 
 
              HOF_atoms(C)       HOF molecule  [all in kcal/mol]

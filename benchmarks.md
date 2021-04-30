@@ -2,10 +2,10 @@
 layout: default
 ---
 # Content:
-1 [G4(MP2) enthalpy of formation for the PPE1694 dataset](#1-g4(MP2)-enthalpy-of-formation-for-the-PPE1694-dataset) 
-2 [G4(MP2)-XP enthalpy of formation for the PPE1694 dataset](#1-g4(MP2)-XP-enthalpy-of-formation-for-the-PPE1694-dataset)  
+1 [G4(MP2) enthalpy of formation for the PPE1694 dataset](#1-g4(MP2)-enthalpy-of-formation-for-the-PPE1694-dataset)    
+2 [G4(MP2)-XP enthalpy of formation for the PPE1694 dataset](#1-g4(MP2)-XP-enthalpy-of-formation-for-the-PPE1694-dataset)      
 3 [G4(MP2)-XP enthalpy of formation for C60](#1-g4(MP2)-XP enthalpy of formation for C60)  
-
+  
 ## 1 G4(MP2) enthalpy of formation for the PPE1694 dataset
 
 [PPE1694_G4MP2.zip](https://github.com/moldis-group/pople/blob/main/benchmarks/PPE1694_G4MP2.zip)

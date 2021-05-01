@@ -4,8 +4,8 @@ layout: default
 # Content:   
 1 [G4MP2 enthalpy of formation for the PPE1694 dataset](#1-g4mp2-enthalpy-of-formation-for-the-ppe1694-dataset)      
 2 [G4MP2-XP enthalpy of formation for the PPE1694 dataset](#2-g4mp2-xp-enthalpy-of-formation-for-the-ppe1694-dataset)   
-3 [G4MP2 enthalpy of formation for 270 entries in the G3/05 dataset](#3-g4mp2-enthalpy-of-formation-for-270-entries-in-the-g3/05-dataset)      
-4 [G4MP2-XP enthalpy of formation for 270 entries in the G3/05 dataset](#4-g4mp2-xp-enthalpy-of-formation-for-270-entries-in-the-g3/05-dataset)  
+3 [G4MP2 enthalpy of formation for 270 entries in the G3/05 dataset](#3-g4mp2-enthalpy-of-formation-for-270-entries-in-the-g3_05-dataset)      
+4 [G4MP2-XP enthalpy of formation for 270 entries in the G3/05 dataset](#4-g4mp2-xp-enthalpy-of-formation-for-270-entries-in-the-g3_05-dataset)  
 5 [G4MP2-XP enthalpy of formation for C60](#5-g4mp2-xp-enthalpy-of-formation-for-c60)  
   
 ## 1 G4MP2 enthalpy of formation for the PPE1694 dataset
@@ -76,13 +76,13 @@ To print geometry and frequencies, please edit the following lines in `calc_hof.
 
 * * *
 
-## 3 G4MP2 enthalpy of formation for 270 entries in the G3/05 dataset
+## 3 G4MP2 enthalpy of formation for 270 entries in the G3_05 dataset
 
 [Heat_G305_G4MP2.zip](https://github.com/moldis-group/pople/blob/main/benchmarks/Heat_G305_G4MP2.zip)
 
 * * *
 
-## 4 G4MP2-XP enthalpy of formation for 270 entries in the G3/05 dataset
+## 4 G4MP2-XP enthalpy of formation for 270 entries in the G3_05 dataset
 
 [Heat_G305_G4MP2-XP.zip](https://github.com/moldis-group/pople/blob/main/benchmarks/Heat_G305_G4MP2-XP.zip)
 

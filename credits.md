@@ -30,7 +30,7 @@ The program is developed by the following members of the [Theory Lab](https://ww
 
 ### PPE1694 dataset
 
-[_Critical Benchmarking of the G4(MP2) Model, the Correlation Consistent Composite Approach and Popular Density Functional Approximations on a Probabilistically Pruned Benchmark Dataset of Formation Enthalpies_](https://doi.org/10.1063/5.0032713),   
+[_Critical benchmarking of the G4(MP2) model, the correlation consistent composite approach and popular density functional approximations on a probabilistically pruned benchmark dataset of formation enthalpies_](https://doi.org/10.1063/5.0032713),   
 Sambit Kumar Das, Sabyasachi Chakraborty, Raghunathan Ramakrishnan,    
 The Journal of Chemical Physics, 154 (2021) 044113.
 

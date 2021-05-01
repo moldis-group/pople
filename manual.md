@@ -3,13 +3,13 @@ layout: default
 ---
 
 # Content:
-1 [Basic input](#basic_input)  
-2 [Optional input](#2-optional-input)  
-3 [Advanced input](#3-advanced-input)  
+[1. Basic input](#basic_input)  
+[2. Optional input](#optional_inpt)  
+[3. Advanced input](#advanced_input)  
 
    
 
-## 1 <a name="basic_input">Basic input</a>
+## <a name="basic_input">1. Basic input</a>
 
 Every calculation requires four essential input arguments for the input keywords  `code`, `code_exe`, `method`, and `xyz`. 
 
@@ -72,7 +72,7 @@ Keyword: `xyz`
 
 * * *
 
-## 2 Optional input
+## <a name="optional_input">2. Optional input</a>
 
 Keyword: `nproc`      
 >Argument (integer): Number of cpu-cores for a parallel calculation    
@@ -121,7 +121,7 @@ See the test job `test_003_enthalpy_H2_frozen_geom`
 
 * * *
 
-## 3 Advanced input
+## <a name="advanced_input">3. Advanced input</a>
 Coming soon
 
 * * *

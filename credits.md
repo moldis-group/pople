@@ -30,20 +30,22 @@ The program is developed by the following members of the [Theory Lab](https://ww
 
 ### PPE1694 dataset
 
-[_Critical benchmarking of the G4(MP2) model, the correlation consistent composite approach and popular density functional approximations on a probabilistically pruned benchmark dataset of formation enthalpies_](https://doi.org/10.1063/5.0032713),   
-Sambit Kumar Das, Sabyasachi Chakraborty, Raghunathan Ramakrishnan,    
-The Journal of Chemical Physics, 154 (2021) 044113.
+[_Critical benchmarking of the G4(MP2) model, the correlation consistent composite approach and popular density functional approximations on a probabilistically pruned benchmark dataset of formation enthalpies_](https://doi.org/10.1063/5.0032713)
+Sambit K. Das, Sabyasachi Chakraborty, Raghunathan Ramakrishnan
+J. Chem. Phys., 154 (2021) 044113.
 
 ### G4(MP2)-XP method
 
-[_All hands on deck: Accelerating ab initio thermochemistry via wavefunction approximations_](),    
-Sambit Kumar Das, Salini Senthil, Sabyasachi Chakraborty, Raghunathan Ramakrishnan,      
+[_All hands on deck: Accelerating ab initio thermochemistry via wavefunction approximations_]()
+Sambit K. Das, Salini Senthil, Sabyasachi Chakraborty, Raghunathan Ramakrishnan
 submitted (2021).
 
 ## General references for _ab initio_ thermochemistry and experimental results 
 
 ### _This section will be constantly updated_
 
-
+* (Gaussian‐1 theory: A general procedure for prediction of molecular energies)[https://doi.org/10.1063/1.456415]
+John A. Pople, Martin Head‐Gordon, and Douglas J. Fox
+J. Chem. Phys., 90 (1989) 5622
 
 * * *

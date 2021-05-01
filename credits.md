@@ -40,4 +40,6 @@ The Journal of Chemical Physics, 154 (2021) 044113.
 Sambit Kumar Das, Salini Senthil, Sabyasachi Chakraborty, Raghunathan Ramakrishnan,      
 submitted (2021).
 
+## General references for _ab initio_ thermochemistry
+
 * * *

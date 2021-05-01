@@ -29,7 +29,6 @@ The enclosed file `PPE1694_G4MP2.csv` contain geometries, frequencies and thermo
   1692   2111.7479     11.3013         14.2000
   1693   1519.7924    195.8740        198.6000
   1694   1208.4291    -54.2314        -59.6000
-
 ```
 
 To print geometry and frequencies, please edit the following lines in `calc_hof.py`
@@ -64,7 +63,6 @@ The enclosed file `PPE1694_G4MP2-XP.csv` contain geometries, frequencies and the
   1692   2112.8919     10.1574         14.2000
   1693   1520.6502    195.0162        198.6000
   1694   1209.9533    -55.7556        -59.6000
-
 ```
 
 To print geometry and frequencies, please edit the following lines in `calc_hof.py`

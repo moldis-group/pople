@@ -10,7 +10,7 @@ layout: default
 
 [PPE1694_G4MP2.zip](https://github.com/moldis-group/pople/blob/main/benchmarks/PPE1694_G4MP2.zip)
 
-The enclosed file `PPE1694_G4MP2.csv` contain geometries, frequencies and thermochemical energies of all 1694 molecules in the PPE1694 dataset calculated at the G4MP2 level. The file `ATOMS_G4MP2.csv` contains energies for the atoms using which atomization energy and standard formation enthalpy are calculated. Here is a screenshot of the output printed when running the python code enclosed in the zip
+The enclosed file `PPE1694_G4MP2.csv` contain geometries, frequencies and thermochemical energies of all 1694 molecules in the PPE1694 dataset calculated at the G4MP2 level. The file `ATOMS_G4MP2.csv` contains energies for the atoms using which atomization energy and standard formation enthalpy are calculated. Here is a screenshot of the output printed when running the python code enclosed in the zip. 
 
 ```
  $ python3.9 calc_hof.py | tee outfile
@@ -30,6 +30,13 @@ The enclosed file `PPE1694_G4MP2.csv` contain geometries, frequencies and thermo
   1693   1519.7924    195.8740        198.6000
   1694   1208.4291    -54.2314        -59.6000
 
+```
+
+To print geometry and frequencies, please edit the following lines in `calc_hof.py`
+
+```
+  print_geom='false' # Set to 'true' for printing geometries in g4mp2_geom.xyz
+  print_freq='false' # Set to 'true' for printing frequencies in g4mp2_freq.dat
 ```
 
 * * *
@@ -58,6 +65,13 @@ The enclosed file `PPE1694_G4MP2-XP.csv` contain geometries, frequencies and the
   1693   1520.6502    195.0162        198.6000
   1694   1209.9533    -55.7556        -59.6000
 
+```
+
+To print geometry and frequencies, please edit the following lines in `calc_hof.py`
+
+```
+  print_geom='false' # Set to 'true' for printing geometries in g4mp2_geom.xyz
+  print_freq='false' # Set to 'true' for printing frequencies in g4mp2_freq.dat
 ```
 
 * * *

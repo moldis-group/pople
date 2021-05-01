@@ -1,18 +1,14 @@
 ---
 layout: default
 ---
-# Content:
-1 [G4(MP2) enthalpy of formation for 270 entries in the G3/05 dataset](#1-g4(MP2)-enthalpy-of-formation-for-270-entries-in-the-G3/05-dataset)      
-2 [G4(MP2)-XP enthalpy of formation for 270 entries in the G3/05 dataset](#2-g4(MP2)-XP-enthalpy-of-formation-for-270-entries-in-the-G3/05-dataset)     
-3 [G4(MP2) enthalpy of formation for the PPE1694 dataset](#3-g4(MP2)-enthalpy-of-formation-for-the-PPE1694-dataset)      
-4 [G4(MP2)-XP enthalpy of formation for the PPE1694 dataset](#4-g4(MP2)-XP-enthalpy-of-formation-for-the-PPE1694-dataset)      
+# Content:   
+1 [G4(MP2) enthalpy of formation for the PPE1694 dataset](#1-g4(MP2)-enthalpy-of-formation-for-the-PPE1694-dataset)      
+2 [G4(MP2)-XP enthalpy of formation for the PPE1694 dataset](#2-g4(MP2)-XP-enthalpy-of-formation-for-the-PPE1694-dataset)   
+3 [G4(MP2) enthalpy of formation for 270 entries in the G3/05 dataset](#3-g4(MP2)-enthalpy-of-formation-for-270-entries-in-the-G3/05-dataset)      
+4 [G4(MP2)-XP enthalpy of formation for 270 entries in the G3/05 dataset](#4-g4(MP2)-XP-enthalpy-of-formation-for-270-entries-in-the-G3/05-dataset)  
 5 [G4(MP2)-XP enthalpy of formation for C60](#5-g4(MP2)-XP-enthalpy-of-formation-for-C60)  
   
-## 1 G4(MP2) enthalpy of formation for 270 entries in the G3/05 dataset
-
-## 2 G4(MP2)-XP enthalpy of formation for 270 entries in the G3/05 dataset
-
-## 3 G4(MP2) enthalpy of formation for the PPE1694 dataset
+## 1 G4(MP2) enthalpy of formation for the PPE1694 dataset
 
 [PPE1694_G4MP2.zip](https://github.com/moldis-group/pople/blob/main/benchmarks/PPE1694_G4MP2.zip)
 
@@ -46,7 +42,7 @@ To print geometry and frequencies, please edit the following lines in `calc_hof.
 
 * * *
 
-## 4 G4(MP2)-XP enthalpy of formation for the PPE1694 dataset
+## 2 G4(MP2)-XP enthalpy of formation for the PPE1694 dataset
 
 [PPE1694_G4MP2-XP.zip](https://github.com/moldis-group/pople/blob/main/benchmarks/PPE1694_G4MP2-XP.zip)
 
@@ -77,6 +73,18 @@ To print geometry and frequencies, please edit the following lines in `calc_hof.
   print_geom='false' # Set to 'true' for printing geometries in g4mp2_geom.xyz
   print_freq='false' # Set to 'true' for printing frequencies in g4mp2_freq.dat
 ```
+
+* * *
+
+## 3 G4(MP2) enthalpy of formation for 270 entries in the G3/05 dataset
+
+[Heat_G305_G4MP2.zip](https://github.com/moldis-group/pople/blob/main/benchmarks/Heat_G305_G4MP2.zip)
+
+* * *
+
+## 4 G4(MP2)-XP enthalpy of formation for 270 entries in the G3/05 dataset
+
+[Heat_G305_G4MP2-XP.zip](https://github.com/moldis-group/pople/blob/main/benchmarks/Heat_G305_G4MP2-XP.zip)
 
 * * *
 

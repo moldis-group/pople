@@ -2,11 +2,11 @@
 layout: default
 ---
 # Content:   
-1 [G4(MP2) enthalpy of formation for the PPE1694 dataset](#1-g4(mp2)-enthalpy-of-formation-for-the-ppe1694-dataset)      
-2 [G4(MP2)-XP enthalpy of formation for the PPE1694 dataset](#2-g4(mp2)-xp-enthalpy-of-formation-for-the-ppe1694-dataset)   
-3 [G4(MP2) enthalpy of formation for 270 entries in the G3/05 dataset](#3-g4(mp2)-enthalpy-of-formation-for-270-entries-in-the-g3/05-dataset)      
-4 [G4(MP2)-XP enthalpy of formation for 270 entries in the G3/05 dataset](#4-g4(mp2)-xp-enthalpy-of-formation-for-270-entries-in-the-g3/05-dataset)  
-5 [G4(MP2)-XP enthalpy of formation for C60](#5-g4(mp2)-xp-enthalpy-of-formation-for-c60)  
+1 [G4(MP2) enthalpy of formation for the PPE1694 dataset](#1-g4\(mp2\)-enthalpy-of-formation-for-the-ppe1694-dataset)      
+2 [G4(MP2)-XP enthalpy of formation for the PPE1694 dataset](#2-g4\(mp2\)-xp-enthalpy-of-formation-for-the-ppe1694-dataset)   
+3 [G4(MP2) enthalpy of formation for 270 entries in the G3/05 dataset](#3-g4\(mp2\)-enthalpy-of-formation-for-270-entries-in-the-g3/05-dataset)      
+4 [G4(MP2)-XP enthalpy of formation for 270 entries in the G3/05 dataset](#4-g4\(mp2\)-xp-enthalpy-of-formation-for-270-entries-in-the-g3/05-dataset)  
+5 [G4(MP2)-XP enthalpy of formation for C60](#5-g4\(mp2\)-xp-enthalpy-of-formation-for-c60)  
   
 ## 1 G4(MP2) enthalpy of formation for the PPE1694 dataset
 

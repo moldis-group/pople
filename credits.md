@@ -1,6 +1,6 @@
 ## How to cite?
 
-The Pople code is made openly available with an [MIT license](https://github.com/moldis-group/pople_package/blob/main/LICENSE). We welcome you to include it in your work. In return, we kindly ask you to cite the underlying entry in your work using Pople.
+The Pople code is made openly available at [https://github.com/moldis-group/pople_package](https://github.com/moldis-group/pople_package) with an [MIT license](https://github.com/moldis-group/pople_package/blob/main/LICENSE). We welcome you to include it in your work. In return, we kindly ask you to cite the underlying entry in your work using Pople.
 
 Sambit Kumar Das, Salini Senthil, Sabyasachi Chakraborty, Raghunathan Ramakrishnan (2021) "Pople: A toolkit for ab initio thermochemistry" https://moldis-group.github.io/pople/
 

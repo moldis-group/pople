@@ -16,7 +16,7 @@ layout: default
 
 [PPE1694_G4MP2-XP.zip](https://github.com/moldis-group/pople/blob/main/benchmarks/PPE1694_G4MP2-XP.zip)
 
-Here is a screenshot of the output printed when running the python code enclosed in the zip
+The enclosed file `PPE1694_G4MP2-XP.csv` contain geometries, frequencies and thermochemical energies of all 1694 molecules in the PPE1694 dataset calculated at the G4MP2-XP level. The file `ATOMS_G4MP2-XP.csv` contains energies for the atoms using which atomization energy and standard formation enthalpy are calculated. Here is a screenshot of the output printed when running the python code enclosed in the zip
 
 ```
  $ python3.9 calc_hof.py | tee outfile

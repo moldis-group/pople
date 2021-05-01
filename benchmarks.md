@@ -76,7 +76,7 @@ To print geometry and frequencies, please edit the following lines in `calc_hof.
 
 * * *
 
-## 
+## <a name="g4mp2_g305">3. G4MP2 enthalpy of formation for 270 entries in the G3_05 dataset</a>
 
 [Heat_G305_G4MP2.zip](https://github.com/moldis-group/pople/blob/main/benchmarks/Heat_G305_G4MP2.zip)
 

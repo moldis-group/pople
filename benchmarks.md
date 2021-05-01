@@ -2,13 +2,13 @@
 layout: default
 ---
 # Content:   
-1 [G4MP2 enthalpy of formation for the PPE1694 dataset](#1-g4mp2-enthalpy-of-formation-for-the-ppe1694-dataset)      
-2 [G4MP2-XP enthalpy of formation for the PPE1694 dataset](#2-g4mp2-xp-enthalpy-of-formation-for-the-ppe1694-dataset)   
-3 [G4MP2 enthalpy of formation for 270 entries in the G3/05 dataset](#3-g4mp2-enthalpy-of-formation-for-270-entries-in-the-g3_05-dataset)      
-4 [G4MP2-XP enthalpy of formation for 270 entries in the G3/05 dataset](#4-g4mp2-xp-enthalpy-of-formation-for-270-entries-in-the-g3_05-dataset)  
-5 [G4MP2-XP enthalpy of formation for C60](#5-g4mp2-xp-enthalpy-of-formation-for-c60)  
+[1. G4(MP2) enthalpy of formation for the PPE1694 dataset](#g4mp2_ppe)      
+[2. G4(MP2)-XP enthalpy of formation for the PPE1694 dataset](#g4mp2xp_ppe)   
+[3. G4(MP2) enthalpy of formation for 270 entries in the G3/05 dataset](#g4mp2_g305)      
+[4. G4(MP2)-XP enthalpy of formation for 270 entries in the G3/05 dataset](#g4mp2xp_g305)  
+[5. G4(MP2)-XP enthalpy of formation for C60](#g4mp2xp_C60)  
   
-## 1 G4MP2 enthalpy of formation for the PPE1694 dataset
+## <a name="g4mp2_ppe">1. G4MP2 enthalpy of formation for the PPE1694 dataset</a>
 
 [PPE1694_G4MP2.zip](https://github.com/moldis-group/pople/blob/main/benchmarks/PPE1694_G4MP2.zip)
 
@@ -42,7 +42,7 @@ To print geometry and frequencies, please edit the following lines in `calc_hof.
 
 * * *
 
-## 2 G4MP2-XP enthalpy of formation for the PPE1694 dataset
+## <a name="g4mp2xp_ppe">2. G4MP2-XP enthalpy of formation for the PPE1694 dataset</a>
 
 [PPE1694_G4MP2-XP.zip](https://github.com/moldis-group/pople/blob/main/benchmarks/PPE1694_G4MP2-XP.zip)
 
@@ -76,19 +76,20 @@ To print geometry and frequencies, please edit the following lines in `calc_hof.
 
 * * *
 
-## 3 G4MP2 enthalpy of formation for 270 entries in the G3_05 dataset
+## 
 
 [Heat_G305_G4MP2.zip](https://github.com/moldis-group/pople/blob/main/benchmarks/Heat_G305_G4MP2.zip)
 
 * * *
 
-## 4 G4MP2-XP enthalpy of formation for 270 entries in the G3_05 dataset
+## <a name="g4mp2xp_g305">4. G4MP2-XP enthalpy of formation for 270 entries in the G3_05 dataset</a>
 
 [Heat_G305_G4MP2-XP.zip](https://github.com/moldis-group/pople/blob/main/benchmarks/Heat_G305_G4MP2-XP.zip)
 
 * * *
 
-## 5 G4MP2-XP enthalpy of formation for C60
+## <a name="g4mp2xp_C60">5. G4MP2-XP enthalpy of formation for C60</a>
+
 The python code contains G4(MP2)-XP level geometry, harmonic frequencies, energies from CCSD(T), HF, and MP2 methods, and demonstrates how the atomization energy and standard formation enthalpy of buckminsterfullerene, C60 can be calculated.
 
 [C60_enthalpy.py](https://github.com/moldis-group/pople/blob/main/benchmarks/C60_enthalpy.py)

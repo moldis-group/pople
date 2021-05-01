@@ -3,13 +3,13 @@ layout: default
 ---
 
 # Content:
-1 [Basic input](#1-basic-input)  
+1 [Basic input](#basic_input)  
 2 [Optional input](#2-optional-input)  
 3 [Advanced input](#3-advanced-input)  
 
    
 
-## 1 Basic input
+## 1 <a name="basic_input">Basic input</a>
 
 Every calculation requires four essential input arguments for the input keywords  `code`, `code_exe`, `method`, and `xyz`. 
 

@@ -13,7 +13,7 @@ layout: default
 [4. Composite input](#comp_input)
 
 [5. Advanced calculations](#adv_calc)
-   >[5.1 Frozen geometry calculation](frozen_geom)   
+   >[5.1 Frozen geometry calculation](#frozen_geom)   
    >[5.2 Atomization energy](#atm_energy)   
    >[5.3 Enthalpy of formation](#form_enthalpy)   
    >[5.4 Multiple calculations](#multip)  

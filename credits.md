@@ -45,7 +45,7 @@ submitted (2021).
 ### _This section will be constantly updated_
 
 * [_Gaussian‐1 theory: A general procedure for prediction of molecular energies_](https://doi.org/10.1063/1.456415)    
-John A. Pople, Martin Head‐Gordon, and Douglas J. Fox       
+John A. Pople, Martin Head‐Gordon, Douglas J. Fox, Krishnan Raghavachari and Larry A. Curtiss          
 J. Chem. Phys., 90 (1989) 5622
 
 * [_Gaussian‐2 theory for molecular energies of first‐ and second‐row compounds_](https://doi.org/10.1063/1.460205)     
@@ -53,7 +53,7 @@ Larry A. Curtiss, Krishnan Raghavachari, Gary W. Trucks and John A. Pople
 J. Chem. Phys., 94 (1991) 7221
 
 * [_Assessment of Gaussian-2 and density functional theories for the computation of enthalpies of formation_](https://doi.org/10.1063/1.473182)     
-Larry A. Curtiss, Paul C. Redfern, Krishnan Raghavachari and John A. Pople       
+Larry A. Curtiss, Krishnan Raghavachari, Paul C. Redfern and John A. Pople       
 J. Chem. Phys., 106 (1997) 1063
 
 * [_Assessment of Gaussian-2 and density functional theories for the computation of ionization potentials and electron affinities_](https://doi.org/10.1063/1.476538)     

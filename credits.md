@@ -52,6 +52,10 @@ J. Chem. Phys., 90 (1989) 5622
 Larry A. Curtiss, Krishnan Raghavachari, Gary W. Trucks and John A. Pople       
 J. Chem. Phys., 94 (1991) 7221
 
+* [_Gaussian-2 theory using reduced Mo/ller–Plesset orders_](https://doi.org/10.1063/1.464297)     
+Larry A. Curtiss, Krishnan Raghavachari and John A. Pople       
+J. Chem. Phys., 98 (1993) 1293
+
 * [_Assessment of Gaussian-2 and density functional theories for the computation of enthalpies of formation_](https://doi.org/10.1063/1.473182)     
 Larry A. Curtiss, Krishnan Raghavachari, Paul C. Redfern and John A. Pople       
 J. Chem. Phys., 106 (1997) 1063

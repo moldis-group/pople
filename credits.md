@@ -56,4 +56,8 @@ J. Chem. Phys., 94 (1991) 7221
 Larry A. Curtiss, Krishnan Raghavachari, Paul C. Redfern, Vitaly Rassolov and John A. Pople
 J. Chem. Phys., 109 (1998) 7764
 
+* [_Gaussian-3 theory using density functional geometries and zero-point energies_](https://doi.org/10.1063/1.478676)
+Anwar G. Baboul, Larry A. Curtiss, Paul C. Redfern and Krishnan Raghavachari
+J. Chem. Phys., 110 (1999) 7650
+
 * * *

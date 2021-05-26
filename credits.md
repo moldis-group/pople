@@ -48,4 +48,11 @@ submitted (2021).
 John A. Pople, Martin Head‐Gordon, and Douglas J. Fox    
 J. Chem. Phys., 90 (1989) 5622
 
+* [_Gaussian‐2 theory for molecular energies of first‐ and second‐row compounds_](https://doi.org/10.1063/1.460205)
+Larry A. Curtiss, Krishnan Raghavachari, Gary W. Trucks and John A. Pople
+J. Chem. Phys., 94 (1991) 7221
+
+* [_Gaussian-3 (G3) theory for molecules containing first and second-row atoms_](https://doi.org/10.1063/1.477422)
+Larry A. Curtiss, Krishnan Raghavachari, Paul C. Redfern, Vitaly Rassolov and John A. Pople
+J. Chem. Phys., 109 (1998) 7764
 * * *

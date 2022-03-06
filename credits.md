@@ -36,7 +36,7 @@ J. Chem. Phys., 154 (2021) 044113.
 
 ### G4(MP2)-XP method
 
-[_All hands on deck: Accelerating ab initio thermochemistry via wavefunction approximations_](https://chemrxiv.org/articles/preprint/All_Hands_on_Deck_Accelerating_Ab_Initio_Thermochemistry_via_Wavefunction_Approximations/14524890)     
+[_All hands on deck: Accelerating ab initio thermochemistry via wavefunction approximations_](https://doi.org/10.26434/chemrxiv.14524890.v1)     
 Sambit K. Das, Salini Senthil, Sabyasachi Chakraborty, Raghunathan Ramakrishnan     
 submitted (2021).
 

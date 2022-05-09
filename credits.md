@@ -76,4 +76,8 @@ J. Chem. Phys., 110 (1999) 7650
 Jan M. L. Martin and Glênisson de Oliveira             
 J. Chem. Phys. 111, 1843 (1999)
 
+* [Unrestricted Coupled Cluster and Brueckner Doubles Variations of W1 Theory](https://doi.org/10.1021/ct900260g)          
+Ericka C. Barnes,† George A. Petersson, John A. Montgomery, Jr.,Michael J. Frisch,and Jan M. L. Martin          
+J. Chem. Theory Comput. 2009, 5, 10, 2687–2693
+
 * * *

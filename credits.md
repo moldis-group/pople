@@ -73,7 +73,7 @@ Anwar G. Baboul, Larry A. Curtiss, Paul C. Redfern and Krishnan Raghavachari
 J. Chem. Phys., 110 (1999) 7650
 
 * [Towards standard methods for benchmark quality ab initio thermochemistry—W1 and W2 theory_](https://doi.org/10.1063/1.479454)     
- Jan M. L. Martin and Glênisson de Oliveira   
+Jan M. L. Martin and Glênisson de Oliveira   
 J. Chem. Phys. 111, 1843 (1999)
 
 * * *

@@ -44,7 +44,7 @@ submitted (2021).
 
 ### _This section will be constantly updated_
 
-### _Composite Methods_
+## Composite Methods
 
 * [_Gaussian‐1 theory: A general procedure for prediction of molecular energies_](https://doi.org/10.1063/1.456415)    
 John A. Pople, Martin Head‐Gordon, Douglas J. Fox, Krishnan Raghavachari and Larry A. Curtiss          

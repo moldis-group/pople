@@ -88,8 +88,17 @@ J. Chem. Phys. 111, 1843 (1999)
 Ericka C. Barnes, George A. Petersson, John A. Montgomery, Jr.,Michael J. Frisch,and Jan M. L. Martin          
 J. Chem. Theory Comput. 2009, 5, 10, 2687–2693
 
-* [Highly accurate first-principles benchmark data sets for the parametrization and validation of density functional and other approximate methods Derivation of a robust, generally applicable, double-hybrid functional for thermochemistry and thermochemical kinetics](https://doi.org/10.1021/jp801805p)
+* [Highly accurate first-principles benchmark data sets for the parametrization and validation of density functional and other approximate methods Derivation of a robust, generally applicable, double-hybrid functional for thermochemistry and thermochemical kinetics](https://doi.org/10.1021/jp801805p)                                    
 Karton, Amir, Alex Tarnopolsky, Jean-Francois Lamére, George C. Schatz, and Jan ML Martin                            
-The Journal of Physical Chemistry A, 112(50), pp.12868-12886          
+The Journal of Physical Chemistry A, 112(50), pp.12868-12886            
+
+* [W4-11: A high-confidence benchmark dataset for computational thermochemistry derived from first-principles W4 data](https://doi.org/10.1016/j.cplett.2011.05.007)                             
+Karton, Amir, Shauli Daon, and Jan ML Martin                   
+Chemical Physics Letters 510, no. 4-6 (2011): 165-178                
+
+* [W4-17: A Diverse and High-Confidence Dataset of Atomization Energies for Benchmarking High-Level Electronic Structure Methods](https://doi.org/10.1002/jcc.24854)                         
+Karton, Amir, Nitai Sylvetsky, and Jan ML Martin                   
+Journal of Computational Chemistry 38, no. 24 (2017): 2063-2075.                          
+
 
 * * *

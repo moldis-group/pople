@@ -72,7 +72,7 @@ J. Chem. Phys., 109 (1998) 42
 
 * [_Gaussian-3 (G3) theory for molecules containing first and second-row atoms_](https://doi.org/10.1063/1.477422)      
 Larry A. Curtiss, Krishnan Raghavachari, Paul C. Redfern, Vitaly Rassolov and John A. Pople      
-J. Chem. Phys., 109 (1998) 7764
+J. Chem. Phys., 109 (1998) 7764The Journal of Physical Chemistry A, 112(50), pp.12868-12886
 
 * [_Gaussian-3 theory using density functional geometries and zero-point energies_](https://doi.org/10.1063/1.478676)     
 Anwar G. Baboul, Larry A. Curtiss, Paul C. Redfern and Krishnan Raghavachari      
@@ -90,6 +90,6 @@ J. Chem. Theory Comput. 2009, 5, 10, 2687–2693
 
 * [Highly accurate first-principles benchmark data sets for the parametrization and validation of density functional and other approximate methods Derivation of a robust, generally applicable, double-hybrid functional for thermochemistry and thermochemical kinetics](https://doi.org/10.1021/jp801805p)
 Karton, Amir, Alex Tarnopolsky, Jean-Francois Lamére, George C. Schatz, and Jan ML Martin
-The Journal of Physical Chemistry A, 112(50), pp.12868-12886
+The Journal of Physical Chemistry A, 112(50), pp.12868-12886          
 
 * * *

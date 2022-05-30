@@ -44,7 +44,11 @@ submitted (2021).
 
 ### _This section will be constantly updated_
 
+* * *
 ## Composite Methods
+* * *
+
+## Gn Method
 
 * [_Gaussian‐1 theory: A general procedure for prediction of molecular energies_](https://doi.org/10.1063/1.456415)    
 John A. Pople, Martin Head‐Gordon, Douglas J. Fox, Krishnan Raghavachari and Larry A. Curtiss          
@@ -73,6 +77,8 @@ J. Chem. Phys., 109 (1998) 7764
 * [_Gaussian-3 theory using density functional geometries and zero-point energies_](https://doi.org/10.1063/1.478676)     
 Anwar G. Baboul, Larry A. Curtiss, Paul C. Redfern and Krishnan Raghavachari      
 J. Chem. Phys., 110 (1999) 7650
+
+## Wn Method
 
 * [Towards standard methods for benchmark quality ab initio thermochemistry—W1 and W2 theory](https://doi.org/10.1063/1.479454)           
 Jan M. L. Martin and Glênisson de Oliveira             

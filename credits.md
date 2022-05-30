@@ -27,7 +27,7 @@ The program is developed by the following members of the [Theory Lab](https://ww
 * * *
 
 ## Related publications
-
+The Journal of Physical Chemistry A, 112(50), pp.12868-12886
 ### PPE1694 dataset
 
 [_Critical benchmarking of the G4(MP2) model, the correlation consistent composite approach and popular density functional approximations on a probabilistically pruned benchmark dataset of formation enthalpies_](https://doi.org/10.1063/5.0032713)   
@@ -47,7 +47,7 @@ submitted (2021).
 * * *
 ## Composite Methods
 * * *
-
+The Journal of Physical Chemistry A, 112(50), pp.12868-12886
 ## Gn Method
 
 * [_Gaussian‐1 theory: A general procedure for prediction of molecular energies_](https://doi.org/10.1063/1.456415)    
@@ -69,7 +69,7 @@ J. Chem. Phys., 106 (1997) 1063
 * [_Assessment of Gaussian-2 and density functional theories for the computation of ionization potentials and electron affinities_](https://doi.org/10.1063/1.476538)     
 Larry A. Curtiss, Paul C. Redfern, Krishnan Raghavachari and John A. Pople       
 J. Chem. Phys., 109 (1998) 42
-
+The Journal of Physical Chemistry A, 112(50), pp.12868-12886
 * [_Gaussian-3 (G3) theory for molecules containing first and second-row atoms_](https://doi.org/10.1063/1.477422)      
 Larry A. Curtiss, Krishnan Raghavachari, Paul C. Redfern, Vitaly Rassolov and John A. Pople      
 J. Chem. Phys., 109 (1998) 7764The Journal of Physical Chemistry A, 112(50), pp.12868-12886
@@ -89,7 +89,7 @@ Ericka C. Barnes, George A. Petersson, John A. Montgomery, Jr.,Michael J. Frisch
 J. Chem. Theory Comput. 2009, 5, 10, 2687–2693
 
 * [Highly accurate first-principles benchmark data sets for the parametrization and validation of density functional and other approximate methods Derivation of a robust, generally applicable, double-hybrid functional for thermochemistry and thermochemical kinetics](https://doi.org/10.1021/jp801805p)
-Karton, Amir, Alex Tarnopolsky, Jean-Francois Lamére, George C. Schatz, and Jan ML Martin
+Karton, Amir, Alex Tarnopolsky, Jean-Francois Lamére, George C. Schatz, and Jan ML Martin                            
 The Journal of Physical Chemistry A, 112(50), pp.12868-12886          
 
 * * *

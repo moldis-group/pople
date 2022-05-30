@@ -47,7 +47,7 @@ submitted (2021).
 * * *
 ## Composite Methods
 * * *
-The Journal of Physical Chemistry A, 112(50), pp.12868-12886
+
 ## Gn Method
 
 * [_Gaussian‐1 theory: A general procedure for prediction of molecular energies_](https://doi.org/10.1063/1.456415)    
@@ -99,6 +99,17 @@ Chemical Physics Letters 510, no. 4-6 (2011): 165-178
 * [W4-17: A Diverse and High-Confidence Dataset of Atomization Energies for Benchmarking High-Level Electronic Structure Methods](https://doi.org/10.1002/jcc.24854)                         
 Karton, Amir, Nitai Sylvetsky, and Jan ML Martin                   
 Journal of Computational Chemistry 38.24 (2017): 2063-2075                                      
+
+* * *
+### Benchmarking
+* * *
+* [BH9, a New Comprehensive Benchmark Data Set for Barrier Heights and Reaction Energies: Assessment of Density Functional Approximations and Basis Set Incompleteness Potentials](https://doi.org/10.1021/acs.jctc.1c00694)                 
+Viki Kumar Prasad, Zhipeng Pei, Simon Edelmann, Alberto Otero-de-la-Roza, and Gino A. DiLabio                          
+J. Chem. Theory Comput. 2022, 18, 151−166                    
+
+* [Tackling an accurate description of molecular reactivity with double-hybrid density functionals](https://doi.org/10.1063/5.0087586)        
+Éric Brémond, Hanwei Li, Ángel José Pérez-Jiménez, Juan Carlos Sancho-García, and Carlo Adamo                         
+J. Chem. Phys. 156, 161101 (2022)                      
 
 
 * * *
